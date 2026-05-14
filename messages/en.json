@@ -1,0 +1,3524 @@
+{
+  "Admin": {
+    "dashboard": {
+      "eyebrow": "Admin",
+      "title": "Platform Overview",
+      "description": "Real-time platform health — what needs you, where money is moving, who's leading.",
+      "attention": {
+        "eyebrow": "Action queue",
+        "title": "Needs your attention",
+        "seeAll": "See all {count}",
+        "verifications": {
+          "title": "Verifications",
+          "subPartner": "Sales Partner · awaiting review",
+          "subCompany": "Tech Company · awaiting review",
+          "empty": "Inbox zero — no profiles waiting on you."
+        },
+        "withdrawals": {
+          "title": "Withdrawals",
+          "empty": "No withdrawal requests pending."
+        },
+        "disputes": {
+          "title": "Disputes",
+          "empty": "All disputes resolved — nothing to verify."
+        }
+      },
+      "pulse": {
+        "eyebrow": "Platform pulse",
+        "title": "How is SellWell doing right now?"
+      },
+      "cards": {
+        "users": {
+          "label": "Total users",
+          "partners": "Sales Partners",
+          "companies": "Tech Companies"
+        },
+        "signups": {
+          "label": "Who joined this week?",
+          "trendLabel": "vs last week"
+        },
+        "campaigns": {
+          "label": "Active campaigns"
+        },
+        "disputes": {
+          "label": "Open disputes"
+        },
+        "revenueMonth": {
+          "label": "How is the platform earning this month?"
+        },
+        "revenueAllTime": {
+          "label": "Revenue (all-time)"
+        },
+        "commissions": {
+          "label": "Commissions facilitated"
+        },
+        "escrow": {
+          "label": "Escrow held"
+        }
+      },
+      "funnel": {
+        "title": "Where are leads stalling?",
+        "submitted": "submitted",
+        "acknowledged": "acknowledged",
+        "converted": "converted",
+        "disputed": "disputed"
+      },
+      "leaders": {
+        "eyebrow": "Where the volume lives",
+        "title": "Platform leaders",
+        "thisMonth": "Last 30 days",
+        "allTime": "All-time",
+        "campaigns": {
+          "title": "Top campaigns by leads",
+          "unit": "{count, plural, one {# lead} other {# leads}}",
+          "empty": "No campaign activity in the last 30 days."
+        },
+        "partners": {
+          "title": "Top partners by commission",
+          "role": "Sales Partner",
+          "empty": "No partner commissions earned recently."
+        },
+        "companies": {
+          "title": "Top companies by escrow funded",
+          "role": "Tech Company",
+          "empty": "No escrow deposits on record."
+        }
+      }
+    },
+    "users": {
+      "eyebrow": "Admin · Users",
+      "title": "Users",
+      "description": "Every Sales Partner and Tech Company on the platform. Suspend, unsuspend, or reset a user's password — no hard delete in V1.",
+      "subtitle": "{count, plural, =0 {No users yet} =1 {1 user} other {{count} users}}",
+      "tabs": {
+        "all":                  "All",
+        "pending_review":       "Pending review",
+        "approved":             "Approved",
+        "more_info_requested":  "More info requested",
+        "rejected":             "Rejected"
+      },
+      "filters": {
+        "searchPlaceholder":   "Search name or email…",
+        "roleLabel":           "Role",
+        "rolePartner":         "Sales Partner",
+        "roleCompany":         "Tech Company",
+        "roleAll":             "All roles",
+        "suspendedLabel":      "Suspension",
+        "suspendedAll":        "All users",
+        "suspendedOnly":       "Only suspended",
+        "suspendedHide":       "Hide suspended"
+      },
+      "columns": {
+        "name":       "User",
+        "role":       "Role",
+        "signupDate": "Signed up",
+        "status":     "Status",
+        "actions":    "Actions"
+      },
+      "rolePartner":   "Partner",
+      "roleCompany":   "Company",
+      "suspendedPill": "Suspended",
+      "statuses": {
+        "pending_review":       "Pending review",
+        "approved":             "Approved",
+        "more_info_requested":  "More info requested",
+        "rejected":             "Rejected"
+      },
+      "empty": {
+        "all":                  { "title": "No users",         "body": "Users will appear here as people sign up." },
+        "pending_review":       { "title": "Inbox zero",       "body": "No signups are waiting on a first review." },
+        "approved":             { "title": "No approved users","body": "Approved users will appear here once you start approving them." },
+        "more_info_requested":  { "title": "Nothing pending",  "body": "No users currently waiting to resubmit additional info." },
+        "rejected":             { "title": "No rejected users","body": "Rejected accounts will appear here for audit." }
+      },
+      "actions": {
+        "open":           "Open profile",
+        "resetPassword":  "Reset password",
+        "suspend":        "Suspend",
+        "unsuspend":      "Unsuspend",
+        "cancel":         "Cancel"
+      },
+      "confirm": {
+        "resetPassword": {
+          "title":   "Send a password reset link?",
+          "body":    "We'll email a reset link to {email}. It expires after one hour.",
+          "confirm": "Send link"
+        },
+        "suspend": {
+          "title":   "Suspend {name}?",
+          "body":    "They'll be blocked from acting on the platform immediately. Their records stay intact and you can unsuspend at any time.",
+          "confirm": "Suspend"
+        },
+        "unsuspend": {
+          "title":   "Unsuspend {name}?",
+          "body":    "They'll regain full platform access immediately.",
+          "confirm": "Unsuspend"
+        }
+      },
+      "toasts": {
+        "resetTitle":     "Reset link sent",
+        "resetSuccess":   "A password reset link was sent to {email}.",
+        "suspendTitle":   "User suspended",
+        "suspendSuccess": "{name} is now suspended. Their records stay intact.",
+        "unsuspendTitle":   "User unsuspended",
+        "unsuspendSuccess": "{name} has full access again."
+      },
+      "overlay": {
+        "sections": {
+          "profile":  "Profile",
+          "account":  "Account",
+          "activity": "Activity"
+        },
+        "bio":           "Bio",
+        "categories":    "Preferred categories",
+        "skills":        "Skill tags",
+        "phone":         "Phone",
+        "linkedin":      "View LinkedIn",
+        "cv":            "CV / Resume",
+        "cvTitle":       "{name} — CV",
+        "previewCv":     "Preview",
+        "downloadCv":    "Download",
+        "industry":      "Industry",
+        "website":       "Website",
+        "description":   "Business description",
+        "logo":          "Logo",
+        "email":         "Email",
+        "role":          "Role",
+        "rolePartner":   "Sales Partner",
+        "roleCompany":   "Tech Company",
+        "signupDate":    "Signup date",
+        "applicationStatus": "Application status",
+        "emailVerified": "Email verified",
+        "yes":           "Yes",
+        "no":            "No",
+        "suspendedAt":   "Suspended on",
+        "priorNote":     "Last admin note",
+        "profileMissing": "No profile data on file for this user.",
+        "previewModal": {
+          "label":              "Document preview",
+          "close":              "Close",
+          "unpreviewableTitle": "Preview not available",
+          "unpreviewableBody":  "This file type can't be previewed in the browser. Open it in a new tab or download to view."
+        },
+        "activity": {
+          "approvedCampaigns":  "Active campaigns",
+          "leadsTotal":         "Leads submitted",
+          "conversionRate":     "Conversion rate",
+          "earningsTotal":      "Earnings (lifetime)",
+          "campaignsTotal":     "Campaigns",
+          "leadsReceived":      "Leads received",
+          "escrowAvailable":    "Escrow available",
+          "commissionsPaid":    "Commissions paid (lifetime)",
+          "flagCount":          "Flags",
+          "recentFlagsHeading": "Recent flags",
+          "noActivity":         "No platform activity yet."
+        }
+      }
+    },
+    "campaigns": {
+      "eyebrow": "Admin · Campaigns",
+      "title": "Campaigns",
+      "description": "Every campaign on the platform. Force-pause or force-close any that violate the terms, and feature the ones worth highlighting on the marketplace.",
+      "tabs": {
+        "all":     "All",
+        "active":  "Active",
+        "paused":  "Paused",
+        "draft":   "Draft",
+        "closed":  "Closed"
+      },
+      "filters": {
+        "searchPlaceholder": "Search product or company…",
+        "categoryLabel":     "Category",
+        "companyLabel":      "Company"
+      },
+      "columns": {
+        "product":   "Product",
+        "company":   "Company",
+        "category":  "Category",
+        "status":    "Status",
+        "partners":  "Partners",
+        "leads":     "Leads",
+        "created":   "Created"
+      },
+      "statuses": {
+        "draft":   "Draft",
+        "active":  "Active",
+        "paused":  "Paused",
+        "closed":  "Closed"
+      },
+      "empty": {
+        "all":    { "title": "No campaigns",    "body": "Campaigns will appear here as companies publish them." },
+        "active": { "title": "No active campaigns", "body": "Live campaigns will show here." },
+        "paused": { "title": "No paused campaigns", "body": "Companies pause their own campaigns; admin can force-pause from this table." },
+        "draft":  { "title": "No drafts",       "body": "Drafts are only visible to their authoring company until published." },
+        "closed": { "title": "No closed campaigns", "body": "Closed campaigns preserve their history here for audit." }
+      },
+      "actions": {
+        "open":        "Open",
+        "forcePause":  "Force-pause",
+        "forceResume": "Resume",
+        "forceClose":  "Force-close",
+        "cancel":      "Cancel"
+      },
+      "confirm": {
+        "forcePause":  { "title": "Force-pause {name}?",   "body": "The campaign immediately stops accepting new leads. Existing reservations continue through their lifecycle.", "confirm": "Force-pause" },
+        "forceResume": { "title": "Resume {name}?",        "body": "The campaign re-opens to new applications and leads.", "confirm": "Resume" },
+        "forceClose":  { "title": "Force-close {name}?",   "body": "The campaign ends. No new applications or leads. Historical data is preserved. This cannot be reversed.", "confirm": "Force-close" }
+      },
+      "toasts": {
+        "pauseTitle":       "Campaign paused",
+        "pauseSuccess":     "{name} is paused. No new leads will land.",
+        "resumeTitle":      "Campaign resumed",
+        "resumeSuccess":    "{name} is active again.",
+        "closeTitle":       "Campaign closed",
+        "closeSuccess":     "{name} has been closed."
+      },
+      "overlay": {
+        "sections": {
+          "overview": "Overview",
+          "salesKit": "Sales Kit",
+          "company":  "Company"
+        },
+        "commission":     "Commission",
+        "trackingWindow": "Tracking window",
+        "trackingWindowValue": "{days} days",
+        "partnerLinks":   "Partner Links",
+        "partnerLinksOn": "Enabled",
+        "partnerLinksOff": "Disabled",
+        "partnersActive": "Active partners",
+        "leadsTotal":     "Leads received",
+        "convertedTotal": "Converted",
+        "noSalesKit":     "This campaign hasn't attached any sales-enablement documents."
+      }
+    },
+    "verifications": {
+      "eyebrow": "Admin · Verifications",
+      "title": "Verification queue",
+      "description": "New signups awaiting your review — approve, request more info, or reject. Oldest first.",
+      "tabs": {
+        "pending":   "Pending review",
+        "moreInfo":  "More info requested",
+        "rejected":  "Rejected"
+      },
+      "filters": {
+        "searchPlaceholder": "Search name or email…",
+        "roleLabel":    "Role",
+        "rolePartner":  "Sales Partner",
+        "roleCompany":  "Tech Company"
+      },
+      "columns": {
+        "name":         "Name",
+        "role":         "Role",
+        "signupDate":   "Signup date",
+        "daysWaiting":  "Days waiting",
+        "status":       "Status"
+      },
+      "statuses": {
+        "pending_review":       "Pending review",
+        "more_info_requested":  "More info requested",
+        "rejected":             "Rejected"
+      },
+      "empty": {
+        "pending_review": {
+          "title": "Inbox zero",
+          "body":  "No signups are awaiting review right now."
+        },
+        "more_info_requested": {
+          "title": "Nothing here",
+          "body":  "No users currently waiting to resubmit additional info."
+        },
+        "rejected": {
+          "title": "No rejected accounts",
+          "body":  "Rejected signups will appear here for audit."
+        }
+      },
+      "overlay": {
+        "sections": {
+          "profile": "Profile",
+          "account": "Account"
+        },
+        "bio":            "Bio",
+        "categories":     "Preferred categories",
+        "skills":         "Skill tags",
+        "cv":             "CV / Resume",
+        "cvTitle":        "{name} — CV",
+        "downloadCv":     "Download",
+        "previewCv":      "Preview",
+        "openInNewTab":   "Open in new tab",
+        "previewModal": {
+          "label":                "Document preview",
+          "close":                "Close",
+          "unpreviewableTitle":   "Preview not available",
+          "unpreviewableBody":    "This file type can't be previewed in the browser. Open it in a new tab or download to view."
+        },
+        "linkedin":       "View LinkedIn",
+        "description":    "Business description",
+        "email":          "Email",
+        "role":           "Role",
+        "rolePartner":    "Sales Partner",
+        "roleCompany":    "Tech Company",
+        "signupDate":     "Signup date",
+        "daysWaiting":    "Days waiting",
+        "status":         "Status",
+        "emailVerified":  "Email verified",
+        "yes":            "Yes",
+        "no":             "No",
+        "priorNote":      "Prior admin note",
+        "profileMissing": "No profile data on file for this user."
+      },
+      "actions": {
+        "approve":           "Approve",
+        "requestMoreInfo":   "Request more info",
+        "reject":            "Reject",
+        "cancel":            "Cancel"
+      },
+      "confirm": {
+        "approve": {
+          "title": "Approve {name}?",
+          "body":  "They'll gain immediate access to act on the platform. You can suspend them later if needed."
+        },
+        "moreInfo": {
+          "title":             "Request more info from {name}",
+          "body":              "Tell the user what's missing or unclear. They'll see this note in their dashboard banner and can edit + resubmit without the cooldown.",
+          "reasonLabel":       "Note to user",
+          "reasonPlaceholder": "e.g. Your CV is missing — please upload a PDF or DOCX (max 10MB)."
+        },
+        "reject": {
+          "title":             "Reject {name}?",
+          "body":              "They'll be blocked from acting on the platform and will see your reason in their dashboard banner. Re-application is allowed after the cooldown.",
+          "reasonLabel":       "Reason for rejection",
+          "reasonPlaceholder": "e.g. LinkedIn URL doesn't match the name on the profile. Bio reads as a generic template."
+        }
+      },
+      "toasts": {
+        "approveTitle":    "Approved",
+        "approveSuccess":  "{name} is now approved and can act on the platform.",
+        "rejectTitle":     "Rejected",
+        "rejectSuccess":   "{name} has been rejected. They'll see your reason on their dashboard.",
+        "moreInfoTitle":   "More info requested",
+        "moreInfoSuccess": "Asked {name} for more info. They'll see your note on their dashboard."
+      }
+    },
+    "withdrawals": {
+      "eyebrow": "Admin · Withdrawals",
+      "title": "Withdrawals queue",
+      "description": "Process Tech Company escrow refunds and Sales Partner commission payouts. Mark each request completed only after uploading proof of the offline transfer.",
+      "tabs": {
+        "pending":    "Pending",
+        "processing": "Processing",
+        "completed":  "Completed",
+        "rejected":   "Rejected"
+      },
+      "roles": {
+        "company": "Tech Company",
+        "partner": "Sales Partner"
+      },
+      "methods": {
+        "ccp":      "CCP",
+        "bank":     "BANK",
+        "ccpFull":  "CCP transfer",
+        "bankFull": "Bank transfer"
+      },
+      "filters": {
+        "searchPlaceholder": "Search name or email…",
+        "roleLabel":   "Role",
+        "rolePartner": "Sales Partner",
+        "roleCompany": "Tech Company",
+        "sinceLabel":  "Requested in",
+        "since": {
+          "7d":  "Last 7 days",
+          "30d": "Last 30 days",
+          "90d": "Last 90 days"
+        }
+      },
+      "columns": {
+        "requester":   "Requester",
+        "amount":      "Amount",
+        "method":      "Method",
+        "destination": "Destination",
+        "requested":   "Requested",
+        "daysWaiting": "Days waiting",
+        "status":      "Status"
+      },
+      "statuses": {
+        "pending":    "Pending",
+        "processing": "Processing",
+        "completed":  "Completed",
+        "rejected":   "Rejected"
+      },
+      "empty": {
+        "pending": {
+          "title": "Inbox zero",
+          "body":  "No withdrawal requests are waiting on you."
+        },
+        "processing": {
+          "title": "Nothing in flight",
+          "body":  "Requests you mark as processing will land here until you upload proof + complete them."
+        },
+        "completed": {
+          "title": "No completed withdrawals yet",
+          "body":  "Completed withdrawals stay here as an audit trail."
+        },
+        "rejected": {
+          "title": "No rejected withdrawals",
+          "body":  "Rejected requests appear here with the reason you gave."
+        }
+      },
+      "overlay": {
+        "subtitle": "Request #{id} · {amount}",
+        "sections": {
+          "request": "Request",
+          "audit":   "Audit trail"
+        },
+        "amountLabel": "Amount",
+        "destination": {
+          "ccpAccount": "CCP account",
+          "ccpKey":     "CCP key (clé)",
+          "bankName":   "Bank",
+          "rib":        "RIB",
+          "holderName": "Account holder"
+        },
+        "proof": {
+          "heading":            "Proof of payment",
+          "title":              "Proof — withdrawal #{id}",
+          "preview":            "Preview",
+          "download":           "Download",
+          "openInNewTab":       "Open in new tab",
+          "uploadedAt":         "Uploaded {date}",
+          "previewLabel":       "Proof of payment",
+          "close":              "Close",
+          "unpreviewableTitle": "Preview not available",
+          "unpreviewableBody":  "This file type can't be previewed in the browser. Open it in a new tab or download to view."
+        },
+        "linkedTx": {
+          "heading": "Linked wallet transaction",
+          "body":    "WalletTransaction #{txId} was written into the company's escrow ledger when this request completed."
+        },
+        "rejection": {
+          "heading": "Rejection reason"
+        },
+        "audit": {
+          "requested":      "Request submitted",
+          "requestedBody":  "Requester asked for {amount}.",
+          "processing":     "Marked as processing",
+          "processingBody": "Admin started the offline disbursement.",
+          "completed":      "Marked as completed",
+          "completedBody":  "Proof of payment uploaded — the funds are out.",
+          "rejected":       "Rejected",
+          "rejectedBody":   "Admin rejected the request."
+        },
+        "readOnly": "This request is closed — read-only history."
+      },
+      "actions": {
+        "markProcessing": "Mark as processing",
+        "markCompleted":  "Mark as completed",
+        "reject":         "Reject",
+        "cancel":         "Cancel"
+      },
+      "confirm": {
+        "processing": {
+          "title": "Mark withdrawal #{id} as processing?",
+          "body":  "Signals 'I've started the offline transfer.' You'll still mark it completed once the bank confirms, with proof attached."
+        },
+        "completed": {
+          "title":        "Mark as completed",
+          "body":         "Upload the proof of payment (bank receipt, CCP confirmation, or screenshot). The requester will see it in their wallet history.",
+          "proofLabel":   "Proof of payment",
+          "proofHelper":  "PDF, JPG, or PNG. Max 5 MB. Required."
+        },
+        "reject": {
+          "title":             "Reject withdrawal #{id}?",
+          "body":              "The frozen amount returns to the requester's available balance. They'll see your reason on their dashboard.",
+          "reasonLabel":       "Reason for rejection",
+          "reasonPlaceholder": "e.g. Active reservations would have left available balance below your typical campaign reservation. Top up first and resubmit."
+        }
+      },
+      "toasts": {
+        "processingSuccessTitle": "Marked as processing",
+        "processingSuccessBody":  "Disburse the funds offline, then return here to mark it completed.",
+        "completedSuccessTitle":  "Withdrawal completed",
+        "completedSuccessBody":   "{name} can now see your proof in their wallet history.",
+        "rejectedSuccessTitle":   "Rejected",
+        "rejectedSuccessBody":    "The frozen amount has returned to the requester's available balance.",
+        "errorTitle": "Couldn't update",
+        "errorBody":  "Something went wrong. Try again in a moment."
+      }
+    },
+    "disputes": {
+      "eyebrow": "Admin · Disputes",
+      "title": "Disputes queue",
+      "description": "The only place admin sees individual leads. Verify with the client, log outreach attempts, and rule on every disputed lead — release escrow to the partner, return it to the company, or open an investigation.",
+      "backToQueue": "Back to queue",
+      "disputeFor": "Dispute for {campaign}",
+      "tabs": {
+        "active":   "Active disputes",
+        "expired":  "Expired-verifying",
+        "resolved": "Resolved"
+      },
+      "statuses": {
+        "disputed_verifying": "Disputed · verifying",
+        "expired_verifying":  "Expired · verifying",
+        "not_converted":      "Not converted"
+      },
+      "filters": {
+        "searchPlaceholder": "Search client, campaign, partner, or company…"
+      },
+      "columns": {
+        "client":      "Client",
+        "campaign":    "Campaign",
+        "partner":     "Partner",
+        "submitted":   "Submitted",
+        "daysWaiting": "Days waiting",
+        "status":      "Status"
+      },
+      "empty": {
+        "disputed_verifying": {
+          "title": "No active disputes",
+          "body":  "Disputed leads waiting on your verification will surface here."
+        },
+        "expired_verifying": {
+          "title": "Nothing expired",
+          "body":  "Leads whose tracking window closed without a confirmed sale or denial will surface here for verification."
+        },
+        "not_converted": {
+          "title": "No resolved-as-no-sale leads yet",
+          "body":  "Read-only audit trail of leads ruled 'no sale' after verification."
+        }
+      },
+      "notFound": {
+        "title":   "Dispute not found",
+        "body":    "This lead either doesn't exist, has been resolved cleanly, or isn't visible to admin. Admin only sees leads in dispute or post-verification.",
+        "backCta": "Back to disputes queue"
+      },
+      "lead": {
+        "heading":            "Lead",
+        "campaign":           "Campaign",
+        "tier":               "Pricing tier",
+        "submitted":          "Submitted",
+        "acknowledged":       "Acknowledged",
+        "trackingExpiresAt":  "Tracking window ends",
+        "daysWaiting":        "Days in dispute",
+        "denialReason":       "Company's denial reason"
+      },
+      "parties": {
+        "partner":   "Sales Partner",
+        "company":   "Tech Company",
+        "flagCount": "{count, plural, =1 {1 prior flag} other {# prior flags}}"
+      },
+      "client": {
+        "heading":     "Client contact",
+        "fullName":    "Full name",
+        "companyName": "Client's company",
+        "phone":       "Phone",
+        "email":       "Email"
+      },
+      "outreach": {
+        "heading": "Outreach log",
+        "count":   "{count, plural, =0 {No attempts yet} =1 {1 attempt} other {# attempts}}",
+        "empty":   "No outreach logged yet — use Contact client to record your first attempt.",
+        "method": {
+          "email": "Email",
+          "phone": "Phone",
+          "sms":   "SMS"
+        },
+        "result": {
+          "pending":                "awaiting reply",
+          "no_answer":              "no answer",
+          "reached_confirmed_sale": "reached · confirmed sale",
+          "reached_no_sale":        "reached · no sale"
+        }
+      },
+      "rail": {
+        "reservation":     "Reservation held in escrow",
+        "commission":      "Commission to partner",
+        "platformFee":     "Platform fee",
+        "totalReserved":   "Total reserved",
+        "actions":         "Resolve",
+        "statusLabel":     "Status",
+        "readOnly":        "This dispute is closed — no further actions available.",
+        "readOnlyResolved":"Ruling: no sale. Reservation returned to the company. Read-only history."
+      },
+      "actions": {
+        "addNote":              "Add note",
+        "ruleSale":             "Rule: sale happened",
+        "ruleSaleShort":        "Sale happened",
+        "ruleNoSale":           "Rule: no sale",
+        "ruleNoSaleShort":      "No sale"
+      },
+      "contactDialog": {
+        "title":         "Add a note to this dispute",
+        "body":          "Record an entry in the audit trail — a client outreach attempt, an internal observation, or a memo for a teammate. Adding a note does NOT resolve the dispute; the lead's status stays unchanged. To resolve, use Sale happened or No sale.",
+        "methodLabel":   "Outreach method (if any)",
+        "method": {
+          "email": "Email",
+          "phone": "Phone",
+          "sms":   "SMS"
+        },
+        "resultLabel":   "Outreach result (if any)",
+        "result": {
+          "pending":                "Awaiting reply",
+          "no_answer":              "No answer",
+          "reached_confirmed_sale": "Reached · client confirmed sale",
+          "reached_no_sale":        "Reached · client said no sale"
+        },
+        "notesLabel":    "Note",
+        "notesHelper":   "What happened, what was said, what's next. Admin-only — never shown to the partner or company. If this isn't an outreach attempt, write 'Internal note: …' so it reads clearly in the audit log.",
+        "notesError":    "Note must be at least 10 characters.",
+        "confirmCta":    "Add note"
+      },
+      "ruleSaleDialog": {
+        "title": "Rule: sale happened against {client}",
+        "body":  "Final ruling — releases escrow to the partner, flags the company. This is irreversible.",
+        "strip": {
+          "heading": "What this does",
+          "body":    "• Commission of {amount} releases from escrow to the partner.\n• Platform fee releases to SellWell.\n• Company's flag_count increases by 1.\n• Lead status → converted_verified."
+        },
+        "notesLabel":  "Ruling notes",
+        "notesHelper": "Why you ruled this way (client confirmed by phone, evidence reviewed, etc.). Stored on the LeadVerification row.",
+        "notesError":  "Ruling notes must be at least 20 characters.",
+        "confirmCta":  "Rule sale happened"
+      },
+      "ruleNoSaleDialog": {
+        "title": "Rule: no sale against {client}",
+        "body":  "Final ruling — returns the reservation to the company, flags the partner for a potentially fake lead. This is irreversible.",
+        "strip": {
+          "heading": "What this does",
+          "body":    "• Reservation returns to the company's available escrow.\n• Partner's flag_count increases by 1.\n• No commission paid.\n• Lead status → not_converted."
+        },
+        "notesLabel":  "Ruling notes",
+        "notesHelper": "Why you ruled this way (client confirmed no purchase, evidence reviewed, etc.). Stored on the LeadVerification row.",
+        "notesError":  "Ruling notes must be at least 20 characters.",
+        "confirmCta":  "Rule no sale"
+      },
+      "toasts": {
+        "contactSuccessTitle":  "Note added",
+        "contactSuccessBody":   "Your note is on the audit trail. Lead status unchanged.",
+        "ruleSaleTitle":        "Ruling: sale happened",
+        "ruleSaleBody":         "Commission released to the partner. Company's flag count increased by 1.",
+        "ruleNoSaleTitle":      "Ruling: no sale",
+        "ruleNoSaleBody":       "Reservation returned to the company. Partner's flag count increased by 1.",
+        "errorTitle":           "Couldn't update",
+        "errorBody":            "Something went wrong. Try again."
+      }
+    },
+    "flags": {
+      "eyebrow": "Admin · Flags",
+      "title": "Flags",
+      "description": "Sales Partners with fake-lead flags and Tech Companies with unreported-sale flags. Rows at 3+ flags are highlighted — a candidate for warning or suspension.",
+      "tabs": {
+        "sales_partner": "Sales Partners",
+        "company":       "Tech Companies"
+      },
+      "filters": {
+        "searchPlaceholder":         "Search name or email…",
+        "minFlagsLabel":             "Minimum flags",
+        "minFlagsAll":               "All (incl. 0)",
+        "minFlagsOne":               "≥ 1 flag",
+        "minFlagsThree":             "≥ 3 flags (alert)",
+        "minFlagsCustom":            "Custom",
+        "minFlagsCustomLabel":       "Custom threshold",
+        "minFlagsCustomPlaceholder": "e.g. 5"
+      },
+      "columns": {
+        "name":         "User",
+        "flagCount":    "Flags",
+        "lastFlagDate": "Last flag"
+      },
+      "empty": {
+        "sales_partner": { "title": "No flagged partners", "body": "Sales Partners get flagged when admin rules \"no sale\" on a disputed lead. None on file right now." },
+        "company":       { "title": "No flagged companies","body": "Tech Companies get flagged when admin rules \"sale happened\" on a denied lead. None on file right now." }
+      }
+    },
+    "reports": {
+      "eyebrow": "Admin · Reports",
+      "title": "Platform reports are coming soon.",
+      "body": "Revenue over time, the leads funnel, top campaigns, top partners, and dispute resolution rate — the cross-platform analytics view."
+    },
+    "settings": {
+      "eyebrow": "Admin · Settings",
+      "title": "Platform settings",
+      "description": "Tune the global knobs that drive platform behavior. Every change applies immediately — new commissions, escrow reservations, and time-windows read the current value.",
+      "categories": {
+        "fees_escrow": { "title": "Fees & Escrow",     "subtitle": "Money knobs — platform-fee % and the minimum escrow top-up." },
+        "windows":     { "title": "Time windows",       "subtitle": "Acknowledgment, verification, cooldown, and attribution durations." },
+        "files":       { "title": "Files & Uploads",    "subtitle": "Upload limits for CVs, proofs, and other documents." }
+      },
+      "keys": {
+        "platform_fee_percentage":              { "label": "Platform fee",                "help": "Percentage of the sale amount SellWell takes on every confirmed sale. Stamped on every new lead at submission time." },
+        "escrow_min_deposit_da":                { "label": "Minimum escrow top-up",       "help": "Lowest amount (in DA) a Tech Company can deposit at one time. Enforced on /escrow/fund." },
+        "lead_acknowledgment_window_days":      { "label": "Lead acknowledgment window",  "help": "Days the company has to reserve & view a lead before it expires." },
+        "client_verification_timeout_days":     { "label": "Client verification timeout", "help": "Days SellWell waits for a client reply before escalating to admin investigation." },
+        "reapplication_cooldown_days":          { "label": "Re-application cooldown",     "help": "Days a rejected partner must wait before re-applying. Enforced on /settings + by the server-side guard." },
+        "partner_link_attribution_window_days": { "label": "Partner Link attribution",    "help": "Days a Partner Link click stays eligible for attribution. Last-click wins inside the window." },
+        "click_dedup_window_minutes":           { "label": "Click deduplication",         "help": "Minutes during which the same IP + same link doesn't double-count as a new click." },
+        "max_upload_size_mb":                   { "label": "Max upload size",             "help": "Largest single file (in MB) any FileInput on the platform accepts. Per-input caps may be tighter." }
+      },
+      "units": {
+        "percent":  "%",
+        "currency": "DA",
+        "days":     "days",
+        "minutes":  "min",
+        "mb":       "MB"
+      },
+      "actions": {
+        "save":      "Save",
+        "saving":    "Saving…",
+        "reset":     "Reset to default",
+        "cancel":    "Cancel"
+      },
+      "validation": {
+        "required":     "Value is required.",
+        "notANumber":   "Must be a number.",
+        "negative":     "Must be zero or greater.",
+        "tooLowPercent":"Must be between 0 and 100.",
+        "tooHighPercent":"Must be between 0 and 100."
+      },
+      "confirm": {
+        "title":   "Change {label}?",
+        "body":    "Updating from {from} to {to}. {help} This applies immediately — every new operation reads the new value.",
+        "confirm": "Apply change"
+      },
+      "toasts": {
+        "savedTitle":   "Setting saved",
+        "savedBody":    "{label} updated to {value}.",
+        "errorTitle":   "Couldn't save",
+        "errorBody":    "Something went wrong. Try again."
+      },
+      "info": {
+        "openAria":         "What this setting controls",
+        "controlsHeading":  "What this controls",
+        "effectsHeading":   "What changes when you edit it",
+        "platform_fee_percentage": {
+          "controls": "The percentage of the sale amount SellWell takes on every confirmed sale. Stored on every new lead at submission time as `platform_fee_amount`, then released to SellWell from the company's escrow when the sale is confirmed.",
+          "effects":  "Lowering this reduces what SellWell earns per sale. Raising it increases the company's total cost (commission + fee). Existing leads keep their stamped fee — only NEW leads submitted after the change use the new percentage."
+        },
+        "escrow_min_deposit_da": {
+          "controls": "The smallest amount (in DA) a Tech Company can deposit into its escrow wallet in a single top-up. Enforced both on /escrow/fund (page validator) and in `fundWallet` (server defense-in-depth).",
+          "effects":  "Lowering this lets companies fund tiny amounts (useful for testing). Raising it blocks companies from topping up below the new floor on their next /escrow/fund visit — existing deposits are untouched."
+        },
+        "lead_acknowledgment_window_days": {
+          "controls": "The number of days a Tech Company has after a partner submits a lead to reserve escrow & reveal the client's contact info. After this, the lead is considered expired and the partner is free to re-submit it elsewhere.",
+          "effects":  "Lowering this shortens the company's window — partners get their leads back to use elsewhere faster. Raising it gives companies more breathing room but delays the partner. Affects the derived `ack_deadline` on every submitted lead immediately."
+        },
+        "client_verification_timeout_days": {
+          "controls": "The number of days SellWell waits for a client to reply during a dispute (when admin contacts the client to verify a sale) before escalating to admin investigation.",
+          "effects":  "Lowering this means disputes escalate to manual admin review sooner — more admin work, faster resolution. Raising it gives clients longer to reply on their own. Affects the derived `verification_deadline` on every dispute row immediately."
+        },
+        "reapplication_cooldown_days": {
+          "controls": "The number of days a rejected Sales Partner must wait before they can re-apply to join the platform. Enforced both in the user-facing /settings banner countdown AND in the server-side `resubmitForReview` guard.",
+          "effects":  "Lowering this lets rejected partners re-apply sooner. Raising it adds friction. Partners currently inside the cooldown will see the remaining countdown shift the next time the page renders."
+        },
+        "partner_link_attribution_window_days": {
+          "controls": "The number of days a Partner Link click remains eligible for attribution. If the client converts within this window via the link, the partner gets the commission. Last-click wins.",
+          "effects":  "Lowering this tightens attribution — only fresh clicks count. Raising it gives partners credit for longer-lead-time sales. Affects every new click recorded after the change; old clicks keep their original expiry."
+        },
+        "click_dedup_window_minutes": {
+          "controls": "The number of minutes during which the same IP + same Partner Link doesn't double-count as a new click. Prevents refresh-spamming a link to inflate the counter.",
+          "effects":  "Lowering this is more permissive (each click counts faster). Raising it is stricter (a visitor's repeated clicks in this window count as one). Affects new clicks recorded after the change."
+        },
+        "max_upload_size_mb": {
+          "controls": "The largest single file (in MB) any FileInput on the platform accepts by default. Some specific inputs override this with a tighter cap (e.g. 5 MB for image thumbnails) — those stay tighter regardless of this setting.",
+          "effects":  "Lowering this rejects bigger uploads platform-wide. Raising it loosens the limit. Affects every NEW upload attempt after the change — already-uploaded files aren't re-validated."
+        }
+      }
+    }
+  },
+  "Profile": {
+    "banking": {
+      "loading":            "Loading banking info…",
+      "descriptionOnFile":  "Your payout destination — used for withdrawals.",
+      "descriptionSetup":   "Set up where you want your payouts to land.",
+      "payoutMethod":       "Payout method",
+      "methods": {
+        "ccp":  "CCP",
+        "bank": "Bank account",
+        "both": "Both"
+      },
+      "accountHolderName": "Account holder name",
+      "ccpAccount":        "CCP account number",
+      "ccpKey":            "CCP key (clé)",
+      "bankName":          "Bank name",
+      "rib":               "RIB",
+      "ribHelper":         "Algerian bank RIB — 20 digits, with spaces if you like.",
+      "actions": {
+        "create": "Save banking info",
+        "update": "Update banking info"
+      },
+      "toasts": {
+        "savedTitle": "Banking info saved",
+        "savedBody":  "Your payout destination is on file.",
+        "errorTitle": "Couldn't save",
+        "errorBody":  "Something went wrong. Try again."
+      }
+    },
+    "security": {
+      "loading":     "Loading…",
+      "email":       "Email",
+      "verified":    "Verified",
+      "notVerified": "Not verified",
+      "memberSince": "Member since",
+      "password":    "Password",
+      "passwordHelp":"Password changes go through the email reset flow in V1 — head to /forgot-password to reset.",
+      "actions": {
+        "changePassword": "Change password"
+      }
+    }
+  },
+  "Common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "search": "Search",
+    "filter": "Filter",
+    "clearAll": "Clear all",
+    "close": "Close",
+    "viewAll": "View all",
+    "noResults": "No results found",
+    "error": "Something went wrong. Please try again.",
+    "required": "This field is required.",
+    "formErrorsTitle": "Missing details",
+    "formErrorsBody": "Please fill in the required fields highlighted below.",
+    "noOptions": "No options",
+    "filters": "Filters",
+    "clickToUpload": "Click to upload",
+    "addAnother": "Add another",
+    "orDragAndDrop": "or drag and drop",
+    "maxFileSize": "Max {size}MB",
+    "fileSizeExceeds": "{name}: file exceeds {size}MB limit.",
+    "comingSoonTitle": "Coming soon",
+    "comingSoonBody": "Google sign-in is not available yet. Use email and password to continue."
+  },
+  "Nav": {
+    "home": "Home",
+    "marketplace": "Marketplace",
+    "howItWorks": "How it works",
+    "faq": "FAQ",
+    "login": "Log in",
+    "getStarted": "Get started free",
+    "signupPartner": "Become a Sales Partner",
+    "signupCompany": "List your product"
+  },
+  "Hero": {
+    "badge": "The first B2B sales partner platform in Algeria",
+    "headlineLine1": "Your next sales team",
+    "headlineLine2": "is already out there",
+    "subCopy": "Connect your SaaS product with professional sales partners who sell through real conversations. You only pay when deals close.",
+    "ctaPrimary": "Get started free",
+    "ctaSecondary": "See how it works",
+    "ctaNote": "Free to join · No commitment · Pay only when deals close"
+  },
+  "Solution": {
+    "overline": "The Solution",
+    "headline": "A marketplace for professional sales partnerships",
+    "body": "SellWell connects tech companies with professional sales partners who sell through real conversations — not paid ads, not cold outreach. Partners pitch, qualify, and deliver clients ready to buy.",
+    "expandHint": "Click any stage to see how it works",
+    "stage1Title": "Companies list their product",
+    "stage1Blurb": "Set commission terms, describe what you sell, choose who can sell it.",
+    "stage1B1": "Free to list — pay nothing until a deal closes.",
+    "stage1B2": "Define your tiers, commission, and partner requirements.",
+    "stage1B3": "Approve every partner before they can sell your product.",
+    "stage2Title": "Partners apply & qualify",
+    "stage2Blurb": "Vetted Algerian sales pros pitch your product through real conversations.",
+    "stage2B1": "Every applicant is a real salesperson, not an affiliate or blogger.",
+    "stage2B2": "Review pitches, approve who fits your brand and target.",
+    "stage2B3": "Partners sell through WhatsApp, calls, meetings, LinkedIn — wherever B2B happens.",
+    "stage3Title": "Deals close, everyone gets paid",
+    "stage3Blurb": "Commission released on confirmed sale. Partners earn full. Companies pay zero upfront.",
+    "stage3B1": "Confirm the sale, the platform calculates everything.",
+    "stage3B2": "Partner receives 100% of commission — no deductions.",
+    "stage3B3": "Platform fee is a flat percentage on top, only on closed deals.",
+    "bullet1": "Real conversations, not paid ads or cold outreach.",
+    "bullet2": "Companies only pay when deals actually close.",
+    "bullet3": "Partners earn full commissions on every sale they bring in.",
+    "withoutPill": "Without SellWell",
+    "withPill": "With SellWell",
+    "withoutSub": "You pay a sales team. Every month — deals or no deals.",
+    "withSub": "A partner brings the lead. You close. You pay only on the win.",
+    "hoverHint": "Hover any event to see how it actually plays out.",
+    "netResult": "Net result",
+    "leftEvent1Title": "Cold-called 14 leads",
+    "leftEvent1Sub": "6 picked up · slow conversion",
+    "leftEvent2Title": "Sales team payroll",
+    "leftEvent2Sub": "Manager + 1 rep · paid every month",
+    "leftEvent3Title": "Marketing spend",
+    "leftEvent3Sub": "LinkedIn ads · lead-list vendor",
+    "leftEvent4Title": "Month-end · 2 deals closed",
+    "leftEvent4Sub": "After a long month of pushing",
+    "leftNetCaption": "+360,000 revenue − 280,000 payroll − 20,000 ads · 60,000 profit",
+    "rightEvent1Title": "You set up your campaign",
+    "rightEvent1Sub": "Account · product · commission terms",
+    "rightEvent2Title": "Ahmed B. delivered a lead",
+    "rightEvent2Sub": "Atlas CRM · contact unlocked",
+    "rightEvent3Title": "You closed the demo",
+    "rightEvent3Sub": "Decision-maker present · budget set",
+    "rightEvent4Title": "Deal closed — Atlas CRM",
+    "rightEvent4Sub": "Sale confirmed by both sides",
+    "rightEvent5Title": "Paid only on the closed deal",
+    "rightEvent5Sub": "Commission released to Ahmed B.",
+    "rightNetCaption": "1 deal · 2.4× more profit · zero fixed cost",
+    "popOutreachTitle": "Outreach this week",
+    "popOutreachTimeLabel": "Time spent",
+    "popOutreachTimeValue": "9h 40min",
+    "callStatusInterested": "interested",
+    "callStatusNoAnswer": "no answer",
+    "callStatusVoicemail": "voicemail",
+    "callStatusWrongNumber": "wrong number",
+    "popPayrollTitle": "Monthly payroll · 2 people",
+    "popPayrollRoleManager": "Sales manager",
+    "popPayrollRoleRep": "Sales rep",
+    "popPayrollTotalLabel": "Total fixed cost",
+    "popPayrollFootnote": "Paid every month — whether the deals come in or not.",
+    "popMonthEndTitle": "Deals closed this month",
+    "popMonthEndRevenueLabel": "Revenue",
+    "popMonthEndFootnote": "After payroll and ads: 60,000 DZD profit. A whole month of pushing for thin margins.",
+    "popAdsTitle": "Marketing spend",
+    "popAdsLinkedIn": "LinkedIn ads",
+    "popAdsGoogle": "Google search ads",
+    "popAdsList": "Lead-list vendor",
+    "popAdsTotalLabel": "Total ad spend",
+    "popAdsFootnote": "Clicks, not clients. Half the leads were unqualified.",
+    "popSetupTitle": "Free setup",
+    "popSetupStep1Title": "Created your account",
+    "popSetupStep1Sub": "Email + verification · 2 min",
+    "popSetupStep2Title": "Listed your product",
+    "popSetupStep2Sub": "Atlas CRM · B2B SaaS · pricing tiers",
+    "popSetupStep3Title": "Set commission terms",
+    "popSetupStep3Sub": "10% per closed deal · 30-day window",
+    "popSetupFootnote": "No fees. No subscription. Your campaign goes live instantly.",
+    "popLeadPartnerName": "Ahmed Benali",
+    "popLeadPartnerSub": "Sales partner · 6 yrs B2B",
+    "popLeadLeadLabel": "Lead",
+    "popLeadCompanyName": "Atlas CRM",
+    "popLeadCompanySub": "Logistics · Algiers · qualified",
+    "popLeadFootnote": "Contact unlocked from escrow. You take it from here.",
+    "popDemoTitle": "Demo notes",
+    "popDemoCheck1": "Decision-maker present",
+    "popDemoCheck2": "Budget confirmed",
+    "popDemoCheck3": "Timeline agreed",
+    "popDemoFootnote": "You ran the call. The platform stays out of your way.",
+    "popDealTitle": "Deal breakdown",
+    "popDealSaleLabel": "Sale amount",
+    "popDealCommissionLabel": "Commission to Ahmed B.",
+    "popDealFeeLabel": "Platform fee (10% of sale)",
+    "popDealNetLabel": "Net to you",
+    "popPaidTitle": "How payment works",
+    "popPaidLine1": "You confirm the sale on the platform.",
+    "popPaidLine2": "Commission releases automatically — partner gets 100%, no deductions.",
+    "popPaidFootnote": "No deal? No commission. No platform fee. No salaries. Zero downside."
+  },
+  "HowItWorks": {
+    "overline": "How it works",
+    "headline": "Four stages, one fair handshake.",
+    "body": "Built so both sides know exactly where they stand at every step. No subscriptions. No fee until a deal closes.",
+    "ctaLabel": "See the details",
+    "closeLabel": "Close",
+    "stage1Title": "List or join, in minutes",
+    "stage1Blurb": "Companies post a campaign. Sales Partners build a profile. Both happen on the same marketplace.",
+    "stage1B1": "Companies set price tiers, commission, and a tracking window.",
+    "stage1B2": "Partners list channels they sell through and past B2B experience.",
+    "stage1B3": "No subscription, no listing fee — joining is free for both sides.",
+    "stage2Title": "Match with intent",
+    "stage2Blurb": "Partners apply to campaigns with a short pitch. Companies approve who represents their product.",
+    "stage2B1": "Each application includes the partner's plan and target segment.",
+    "stage2B2": "Companies see profile, channels, and prior conversion history.",
+    "stage2B3": "Approval is per-campaign — no blanket access.",
+    "stage3Title": "Sell through real conversations or links",
+    "stage3Blurb": "Partners pitch on WhatsApp, phone, LinkedIn, or in person — wherever the client actually is.",
+    "stage3B1": "For offline deals, partners register the hot lead on the platform.",
+    "stage3B2": "For online-payable products, partners share a tracked Partner Link.",
+    "stage3B3": "Contact details unlock only when the company reserves escrow.",
+    "stage4Title": "Confirm the sale, money moves",
+    "stage4Blurb": "The company confirms the deal. Commission releases to the partner, platform fee releases to SellWell.",
+    "stage4B1": "Confirmation triggers payout in one transaction.",
+    "stage4B2": "If the company denies a sale, the client is contacted to verify.",
+    "stage4B3": "Partners keep their full commission — no deductions."
+  },
+  "Footer": {
+    "brandDescription": "The first B2B tech sales partner platform in Algeria. Built so both sides come out ahead.",
+    "colPlatform": "Platform",
+    "colAccount": "Account",
+    "colCompany": "Company",
+    "marketplace": "Marketplace",
+    "howItWorks": "How it works",
+    "twoPaths": "For both sides",
+    "faq": "FAQ",
+    "login": "Log in",
+    "signup": "Sign up",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "madeIn": "Made in Algiers"
+  },
+  "CTABanner": {
+    "overline": "Ready when you are",
+    "headline": "Pick your side. Both are free to start.",
+    "subcopy": "Tech companies list a product. Sales partners apply to sell it. The first deal pays for itself.",
+    "ctaCompany": "List your product",
+    "ctaPartner": "Become a Sales Partner",
+    "reassurance": "Free to join · No subscription · No fee until a confirmed sale"
+  },
+  "FAQ": {
+    "overline": "FAQ",
+    "headline": "Questions you might have",
+    "subtitle": "Two sides, same answers — pick yours.",
+    "tabCompany": "For Tech Companies",
+    "tabPartner": "For Sales Partners",
+    "tabLinks": "Partner Links",
+    "tabPricing": "Pricing & Fees",
+    "company1Q": "What does it cost to list a product?",
+    "company1A": "Nothing. Listing is free. Approving partners is free. You only pay when you confirm a sale — when a partner has closed a real deal and you've sold your product. The 10% platform fee and the partner's commission release from your escrow only at that confirmation. No subscription, no setup fee, no monthly cost.",
+    "company2Q": "How does the escrow wallet actually work?",
+    "company2A": "The wallet is your money sitting on the platform. You fund it any amount you want via Chargily Pay. When a partner submits a hot lead, you reserve commission + platform fee from that wallet to view the contact details. If the deal closes you confirm and the reservation pays out. If it doesn't, the reservation returns — your wallet, untouched.",
+    "company3Q": "Can I get my escrow money back?",
+    "company3A": "Yes, any time. Your available balance — anything not currently reserved against a live lead — can be withdrawn back to the original payment method. Or you can keep it and use it on the next lead. It's your money on your terms.",
+    "company4Q": "What stops a partner from claiming a deal my own team already closed?",
+    "company4A": "Two things. First, duplicate detection: the same client phone or email submitted to the same campaign is rejected — first submission wins. Second, the tracking window: a lead is locked to the partner who registered it for 30, 60, or 90 days (you choose). After that it's released.",
+    "company5Q": "What if a partner brings me a fake or unqualified lead?",
+    "company5A": "You report it. SellWell contacts the client to verify. Partners with repeated fake-lead reports are flagged and eventually suspended. Every partner applies per-campaign with a written pitch — you approve who represents your product.",
+    "partner1Q": "Is this just affiliate marketing in disguise?",
+    "partner1A": "No. This is a platform for professional B2B salespeople — people who pitch, qualify, and close. Every partner applies to a campaign with a written pitch. Companies approve who sells their product. No bloggers, no influencers, no signup-and-spam links.",
+    "partner2Q": "When do I get paid?",
+    "partner2A": "The day the deal closes. For offline leads, the company confirms the sale on the platform and your commission releases from their escrow to your earnings the same day. For Partner Link sales, payment splits at checkout via Chargily Pay — you're credited automatically.",
+    "partner3Q": "Is the commission really 100%, or are there hidden deductions?",
+    "partner3A": "100%. The platform fee is paid by the company on top of the commission, not deducted from it. If a campaign offers 10,000 DA commission, you receive exactly 10,000 DA.",
+    "partner4Q": "What if a company denies a sale I actually closed?",
+    "partner4A": "SellWell contacts the client directly to verify. If the client confirms the sale, the company's escrow releases your commission and the company is flagged. Three flags trigger an investigation. The verification flow protects you.",
+    "partner5Q": "Can I sell on multiple campaigns at the same time?",
+    "partner5A": "Yes. Apply to as many campaigns as fit your skills. You build one professional profile (channels, experience, prior conversion record) and use it across every application.",
+    "links1Q": "What is a Partner Link?",
+    "links1A": "A tracked URL approved partners can share. SellWell records the click then redirects instantly to the merchant's own product or pricing page — the client barely registers passing through. When the client buys on the merchant's site, the sale is auto-attributed to the partner via a Chargily webhook. Used for online-payable products like SaaS subscriptions where the deal can close in a self-serve checkout.",
+    "links2Q": "When should I use a Partner Link instead of registering a hot lead?",
+    "links2A": "Use Partner Links when the company offers them and the product can be bought online (typical for SaaS subscriptions, training, digital products). Use lead registration for high-touch B2B deals that close offline — most enterprise software, anything over a few hundred thousand DA.",
+    "links3Q": "How is a Partner Link sale paid?",
+    "links3A": "The client pays the merchant directly via Chargily Pay on the merchant's own site — SellWell never holds the customer's payment. When Chargily's webhook tells SellWell the payment succeeded, the partner's commission and the platform fee are recorded against the sale; commission accrues to the partner's withdrawable balance and the platform fee is invoiced to the merchant. No escrow involved.",
+    "links4Q": "How does attribution work — what if the client buys later?",
+    "links4A": "Each click is logged with a timestamp and a hashed IP. The same client clicking your link and buying within the dedup window counts as one click. Attribution sticks to the partner who shared the link the client used.",
+    "links5Q": "Can a company turn off Partner Links for their campaign?",
+    "links5A": "Yes. Each campaign has a Partner Links toggle. Some companies prefer offline-only because their product doesn't sell self-serve. The campaign's listing tells you upfront which flow is allowed.",
+    "pricing1Q": "What does SellWell charge?",
+    "pricing1A": "A platform fee of 10% on the sale amount, paid only when three things have all happened: the deal closes, you've actually received the client's payment, and you confirm the sale on SellWell. Nothing leaves your escrow before that. No subscription, no listing fee, no signup cost, no monthly minimum — every dinar in your wallet stays yours until you confirm a real, paid deal.",
+    "pricing2Q": "Is the fee 10% of the commission or 10% of the sale?",
+    "pricing2A": "10% of the sale amount. If a product sells for 100,000 DA at a 10% commission rate, the partner earns 10,000 DA, the company pays a 10,000 DA platform fee, and the company's total cost on that deal is 20,000 DA. The partner keeps the full 10,000.",
+    "pricing3Q": "When is the platform fee charged?",
+    "pricing3A": "Only when a deal is confirmed. For offline leads, when the company confirms the sale. For Partner Link sales, automatically at checkout. If a deal doesn't close, the company pays nothing.",
+    "pricing4Q": "Are there any hidden costs?",
+    "pricing4A": "No. Listing is free. Joining is free. Funding the escrow uses standard Chargily Pay processing rates (set by Chargily, not SellWell). Withdrawing escrow back is free. Partner payouts are free.",
+    "pricing5Q": "Can the platform fee change?",
+    "pricing5A": "The fee is a platform setting and may be adjusted in the future, but any change applies only to deals after the change. Existing campaigns and in-progress reservations honor the fee at the time the lead was submitted."
+  },
+  "TrustedBy": {
+    "overline": "Trusted by",
+    "headline": "The first Algerian tech companies on board"
+  },
+  "TwoPaths": {
+    "overline": "Built for both sides",
+    "headline": "Two sides, one platform",
+    "companyEyebrow": "For Tech Companies",
+    "companyHeading": "Grow without growing your headcount",
+    "companyBody": "List your product, fund a small escrow, and approve the partners who sell it. You only pay when a deal closes — commission to the partner, platform fee to SellWell.",
+    "companyB1": "Free to list — no subscription, no setup fee",
+    "companyB2": "Approve every partner before they can sell your product",
+    "companyB3": "Pay commission + platform fee only on confirmed sales",
+    "companyCta": "List your product",
+    "partnerEyebrow": "For Sales Partners",
+    "partnerHeading": "Real B2B sales work — paid in full, fast",
+    "partnerBody": "Apply to campaigns you believe in. Register hot leads from real conversations or share a tracked Partner Link for online products. The company's commission is held in escrow before you even see the lead.",
+    "partnerB1": "Both flows: register hot leads or share Partner Links",
+    "partnerB2": "Every lead and click is attributed to you — paid the day the deal closes",
+    "partnerB3": "Keep 100% of your commission — no platform deductions",
+    "partnerCta": "Start Selling"
+  },
+  "Problem": {
+    "overline": "The Challenge",
+    "headline": "Selling software in Algeria is harder than building it",
+    "card1Title": "Sales teams are expensive",
+    "card1Body": "Building an in-house team takes months, costs salaries and benefits, and doesn't guarantee results.",
+    "card2Title": "Marketing doesn't close B2B deals",
+    "card2Body": "Ads bring clicks, not clients. In Algeria, B2B sales happen through trust and real conversations.",
+    "card3Title": "Manual sales tracking is chaos",
+    "card3Body": "Spreadsheets, missed commissions, payment disputes. Without a platform, it doesn't scale.",
+    "closing": "There's a better way to sell software in Algeria."
+  },
+  "Auth": {
+    "termsLine": "By continuing, you agree to our <terms>Terms</terms> and acknowledge our <privacy>Privacy Policy</privacy>.",
+    "or": "or",
+    "Banners": {
+      "openDetails": "Open details",
+      "noteHeading": "Admin's note",
+      "email": {
+        "pillTitle": "Email not verified",
+        "title": "Email not verified",
+        "body": "Verify {email} to unlock the platform.",
+        "cta": "Resend",
+        "sending": "Sending…",
+        "resent": "Email sent"
+      },
+      "application": {
+        "showReason": "View admin's note",
+        "hideReason": "Hide note",
+        "pending_review": {
+          "pillTitle": "Application under review",
+          "title": "Application under review",
+          "body": "Admin typically reviews within 2–5 business days. You can browse while you wait."
+        },
+        "more_info_requested": {
+          "pillTitle": "Admin needs more info",
+          "title": "Admin needs more info",
+          "body": "Update the requested fields in your profile and resubmit."
+        }
+      }
+    },
+    "Rejected": {
+      "heading": "Application not approved",
+      "body": "Your SellWell application was not approved. You can re-apply after 30 days.",
+      "reasonLabel": "Admin's reason",
+      "logout": "Log out",
+      "contact": "Need help? Contact {email}"
+    },
+    "Login": {
+      "heading": "Log in to SellWell",
+      "google": "Continue with Google",
+      "email": "Continue with email",
+      "emailPlaceholder": "you@company.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Your password",
+      "submit": "Log in",
+      "back": "Back",
+      "forgot": "Forgot password?",
+      "switchPrompt": "Don't have an account?",
+      "switchCta": "Sign up",
+      "errorInvalid": "Invalid email or password.",
+      "errorGeneric": "Something went wrong. Please try again."
+    },
+    "Signup": {
+      "step0Heading": "Create your SellWell account",
+      "step0Subheading": "How do you plan to use SellWell?",
+      "roleCompanyTitle": "Tech Company",
+      "roleCompanyBlurb": "Grow without hiring a full sales team",
+      "rolePartnerTitle": "Sales Partner",
+      "rolePartnerBlurb": "Earn full commission on real B2B deals",
+      "step1HeadingCompany": "Create your Tech Company account",
+      "step1HeadingPartner": "Create your Sales Partner account",
+      "google": "Continue with Google",
+      "email": "Continue with email",
+      "emailLabel": "Work email",
+      "emailPlaceholder": "you@company.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Min. 8 characters",
+      "confirmLabel": "Confirm password",
+      "confirmPlaceholder": "Re-enter your password",
+      "submit": "Create account",
+      "back": "Back",
+      "changeRole": "Change role",
+      "switchPrompt": "Already have an account?",
+      "switchCta": "Log in",
+      "errorEmailFormat": "Enter a valid email address.",
+      "errorPasswordLength": "Password must be at least 8 characters.",
+      "errorPasswordMatch": "Passwords don't match.",
+      "errorEmailTaken": "An account with this email already exists."
+    },
+    "PartnerProfile": {
+      "stepIdentityLabel": "About you",
+      "stepStoryLabel": "Story",
+      "stepTagsLabel": "Tags",
+      "stepFilesLabel": "Files",
+      "stepIdentityHeading": "Tell us who you are",
+      "stepIdentitySub": "We'll show your name on your profile.",
+      "stepStoryHeading": "Your story",
+      "stepStorySub": "Tell tech companies how you sell.",
+      "stepTagsHeading": "What you sell",
+      "stepTagsSub": "Pick the categories and skills you bring to deals.",
+      "stepFilesHeading": "Your photo and CV",
+      "stepFilesSub": "These help companies trust you fast.",
+      "firstNameLabel": "First name",
+      "lastNameLabel": "Last name",
+      "phoneLabel": "Phone (optional)",
+      "phonePlaceholder": "+213 …",
+      "bioLabel": "Bio",
+      "bioPlaceholder": "What do you sell, and how do you sell it? A few sentences.",
+      "linkedinLabel": "LinkedIn URL",
+      "linkedinPlaceholder": "https://linkedin.com/in/…",
+      "categoriesLabel": "Preferred categories",
+      "categoriesPlaceholder": "Select categories you sell into",
+      "skillsLabel": "Skill tags",
+      "skillsPlaceholder": "Select your sales skills",
+      "photoLabel": "Profile photo",
+      "cvLabel": "CV",
+      "cvHelper": "PDF or DOCX, up to 10MB.",
+      "continue": "Continue",
+      "submit": "Finish signup",
+      "back": "Back",
+      "errorLinkedin": "Enter a valid LinkedIn URL.",
+      "errorRequired": "This field is required."
+    },
+    "CompanyProfile": {
+      "stepIdentityLabel": "Company",
+      "stepStoryLabel": "Pitch & logo",
+      "stepIdentityHeading": "Tell us about your company",
+      "stepIdentitySub": "Sales Partners see this on the marketplace.",
+      "stepStoryHeading": "Your pitch and logo",
+      "stepStorySub": "A short description and a clean logo.",
+      "companyNameLabel": "Company name",
+      "industryLabel": "Industry",
+      "industryPlaceholder": "Select your industry",
+      "websiteLabel": "Website (optional)",
+      "websitePlaceholder": "https://…",
+      "descriptionLabel": "Business description",
+      "descriptionPlaceholder": "What does your company do? A short pitch.",
+      "logoLabel": "Company logo",
+      "continue": "Continue",
+      "submit": "Finish signup",
+      "back": "Back",
+      "errorWebsite": "Enter a valid URL.",
+      "errorRequired": "This field is required."
+    },
+    "VerifyEmail": {
+      "sentHeading": "Check your inbox",
+      "sentBody": "We sent a verification link to your email. Click the link to verify your email.",
+      "sentResend": "Resend verification email",
+      "sentLoginCta": "Login to your account now",
+      "sentDashboardCta": "Go to dashboard",
+      "sentResent": "Email resent — check your inbox.",
+      "successHeading": "You're all set",
+      "successBody": "Your email is verified. Continue to your dashboard.",
+      "successCta": "Go to dashboard",
+      "expiredHeading": "Link expired",
+      "expiredBody": "This verification link has expired. Request a new one and we'll send a fresh link.",
+      "expiredCta": "Send a new link",
+      "alreadyHeading": "Already verified",
+      "alreadyBody": "This account is already verified. Log in to continue.",
+      "alreadyCta": "Log in",
+      "fallbackEmail": "your email"
+    },
+    "ForgotPassword": {
+      "heading": "Forgot password",
+      "subheading": "Enter your email and we'll send you a reset link.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@company.com",
+      "submit": "Send reset link",
+      "sentHeading": "Check your inbox",
+      "sentBody": "If an account exists for <strong>{email}</strong>, we sent a reset link. Click it to set a new password.",
+      "sentResend": "Resend",
+      "back": "Back to log in"
+    },
+    "ResetPassword": {
+      "heading": "Set a new password",
+      "subheading": "Choose a strong password you'll remember.",
+      "passwordLabel": "New password",
+      "passwordPlaceholder": "Min. 8 characters",
+      "confirmLabel": "Confirm password",
+      "confirmPlaceholder": "Re-enter your password",
+      "submit": "Update password",
+      "successHeading": "Password updated",
+      "successBody": "You can now log in with your new password.",
+      "successCta": "Log in",
+      "errorPasswordLength": "Password must be at least 8 characters.",
+      "errorPasswordMatch": "Passwords don't match.",
+      "invalidHeading": "Reset link invalid",
+      "invalidBody": "This reset link is invalid or has expired. Request a new one.",
+      "invalidCta": "Request a new link"
+    }
+  },
+  "Meta": {
+    "title": "SellWell — B2B Tech Sales Partners in Algeria",
+    "description": "The first B2B tech sales partner platform in Algeria. Connect your SaaS with professional sales partners who close deals through real conversations."
+  },
+  "Dashboard": {
+    "Header": {
+      "expandSidebar": "Expand sidebar",
+      "collapseSidebar": "Collapse sidebar",
+      "notifications": "Notifications, {count} unread",
+      "openAccountMenu": "Open account menu"
+    },
+    "Nav": {
+      "dashboard": "Dashboard",
+      "marketplace": "Marketplace",
+      "campaigns": "Campaigns",
+      "applications": "Applications",
+      "leads": "Leads",
+      "leadsInbox": "Leads inbox",
+      "partnerLinks": "Partner Links",
+      "partnerLinksPerf": "Partner Link performance",
+      "earnings": "Earnings",
+      "escrow": "Escrow",
+      "notifications": "Notifications",
+      "adminDashboard": "Admin overview",
+      "users": "Users",
+      "verifications": "Verifications",
+      "withdrawals": "Withdrawals",
+      "disputes": "Disputes",
+      "flags": "Flags",
+      "reports": "Reports",
+      "platformSettings": "Platform settings"
+    },
+    "Dock": {
+      "profile":  "Profile",
+      "help":     "Help",
+      "language": "Language"
+    },
+    "AvatarMenu": {
+      "manageAccount": "Manage account",
+      "logout": "Log out",
+      "rolePartner": "Sales Partner",
+      "roleCompany": "Company",
+      "roleAdmin": "Admin"
+    },
+    "Earnings": {
+      "title": "Earnings",
+      "description": "Commission history, available balance, and withdrawal requests — coming soon."
+    },
+    "Notifications": {
+      "title": "Notifications",
+      "allCaughtUp": "You're all caught up.",
+      "unreadCount": "{count, plural, =1 {1 unread} other {# unread}}",
+      "markAllRead": "Mark all read",
+      "markedAllReadToast": "{count, plural, =1 {1 notification marked as read.} other {# notifications marked as read.}}",
+      "markAllReadError": "Couldn't mark notifications as read. Try again.",
+      "viewAll": "View all notifications",
+      "unreadSr": "Unread.",
+      "empty": {
+        "title": "You're all caught up.",
+        "body": "We'll ping you when there's a new lead, application, or sale to look at."
+      },
+      "Time": {
+        "justNow": "just now",
+        "minsAgo": "{count, plural, =1 {1m ago} other {#m ago}}",
+        "hoursAgo": "{count, plural, =1 {1h ago} other {#h ago}}",
+        "daysAgo": "{count, plural, =1 {1d ago} other {#d ago}}"
+      }
+    },
+    "PartnerDashboard": {
+      "greeting": "Welcome back, {name}.",
+      "description": "Your earnings, your pipeline, and what's waiting on you — at a glance.",
+      "kpi": {
+        "totalEarned": "Total earned",
+        "thisMonth": "This month",
+        "available": "Available",
+        "pending": "Pending in escrow",
+        "clicks": "Clicks",
+        "conversions": "Conversions",
+        "conversionRate": "Conv. rate",
+        "avgPerConversion": "Avg / conversion",
+        "vsPrev30d": "vs previous 30d",
+        "nLeads": "{count, plural, =1 {# lead} other {# leads}}",
+        "withdraw": "Withdraw"
+      },
+      "chart": {
+        "title": "Commission earned",
+        "subtitle": {
+          "7d": "Last 7 days",
+          "30d": "Last 30 days",
+          "90d": "Last 90 days",
+          "12m": "Last 12 months"
+        },
+        "range": {
+          "7d": "7d",
+          "30d": "30d",
+          "90d": "90d",
+          "12m": "12m"
+        },
+        "tooltip": {
+          "current": "Current",
+          "previous": "Previous"
+        },
+        "empty": {
+          "title": "No commission yet",
+          "body": "Earnings show up here as soon as your first lead converts or your first Partner Link sale lands."
+        }
+      },
+      "actions": {
+        "title": "Action required",
+        "deadline": {
+          "expired": "expired",
+          "inHours": "{count, plural, =1 {in 1h} other {in #h}}",
+          "inDays": "{count, plural, =1 {in 1d} other {in #d}}"
+        },
+        "empty": {
+          "title": "You're on top of it.",
+          "body": "Nothing's waiting on you right now. We'll surface time-pressure items here when they appear."
+        }
+      },
+      "recentLeads": {
+        "title": "Recent leads",
+        "viewAll": "View all",
+        "noCompany": "No company",
+        "filter": {
+          "all": "All",
+          "expiringSoon": "Expiring soon",
+          "awaitingConfirm": "Awaiting confirmation",
+          "confirmedThisMonth": "Confirmed this month"
+        },
+        "empty": {
+          "allTitle": "No leads yet.",
+          "allBody": "Submitted leads land here. Browse the marketplace and apply to a campaign to get started.",
+          "expiringSoonTitle": "Nothing's expiring.",
+          "expiringSoonBody": "Acknowledged leads with less than 48 hours left in their tracking window will show up here.",
+          "awaitingConfirmTitle": "No leads in flight.",
+          "awaitingConfirmBody": "Leads waiting on company acknowledgment or in tracking window will show up here.",
+          "confirmedThisMonthTitle": "No conversions this month.",
+          "confirmedThisMonthBody": "Confirmed sales for the current calendar month will show up here."
+        }
+      },
+      "approvedCampaigns": {
+        "title": "My approved campaigns",
+        "viewAll": "View all",
+        "submitLead": "Submit a lead",
+        "generateLink": "Generate Partner Link",
+        "pctCommission": "{value}% commission",
+        "flatCommission": "{value} per sale",
+        "empty": {
+          "title": "No approved campaigns yet.",
+          "body": "Apply to campaigns in the marketplace — once a company approves you, they'll appear here.",
+          "cta": "Browse marketplace →"
+        }
+      }
+    },
+    "NotificationsPage": {
+      "title": "Notifications",
+      "description": "Everything that's happened on your campaigns, leads, applications, and earnings.",
+      "tabs": {
+        "inbox":       "Inbox",
+        "preferences": "Preferences"
+      },
+      "filter": {
+        "all": "All",
+        "unread": "Unread",
+        "read": "Read"
+      },
+      "groups": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "earlierThisWeek": "Earlier this week",
+        "earlier": "Earlier"
+      },
+      "empty": {
+        "allTitle": "Nothing to show yet.",
+        "allBody": "We'll list every lead, application, and sale event here as it happens.",
+        "unreadTitle": "You're all caught up.",
+        "unreadBody": "No unread notifications. Switch to All to see your full history.",
+        "readTitle": "No read notifications.",
+        "readBody": "Notifications you've opened will land here once you've cleared them."
+      },
+      "preferences": {
+        "intro": "Choose how you'd like to hear about each kind of event. Email is on by default; the in-app feed and bell badge are always on for now — granular in-app muting is coming soon.",
+        "inAppColumn": "In-app",
+        "emailColumn": "Email",
+        "inAppToggleLabel": "In-app notifications (coming soon)",
+        "emailToggleLabel": "Email notifications",
+        "comingSoon": "Coming soon",
+        "noEmail": "No email",
+        "saved": "Saved",
+        "muteAllEmail": "Mute all email",
+        "enableAllEmail": "Enable all email",
+        "empty": {
+          "title": "No preferences for this account.",
+          "body": "Notification preferences are surfaced for Sales Partner and Tech Company accounts."
+        },
+        "groups": {
+          "leads_sales": {
+            "title": "Leads & sales",
+            "description": "Hot leads, sale outcomes, and dispute verifications."
+          },
+          "applications": {
+            "title": "Applications",
+            "description": "Approvals, rejections, and new applications to your campaigns."
+          },
+          "partner_links": {
+            "title": "Partner Links",
+            "description": "Sales attributed to your tracked links."
+          },
+          "earnings_withdrawals": {
+            "title": "Earnings & withdrawals",
+            "description": "Commission payouts and withdrawal status updates."
+          },
+          "escrow": {
+            "title": "Escrow",
+            "description": "Escrow funding alerts and lead-reservation gating."
+          },
+          "withdrawals": {
+            "title": "Withdrawals",
+            "description": "Status updates on your escrow withdrawal requests."
+          }
+        },
+        "events": {
+          "lead_acknowledged": {
+            "label": "Lead reserved by a company",
+            "helper": "A company reserved escrow on your hot lead and unlocked the contact details."
+          },
+          "lead_expired": {
+            "label": "Lead expired without acknowledgement",
+            "helper": "The 7-day acknowledgement window passed without the company reserving. You can re-submit the client to another campaign."
+          },
+          "sale_confirmed": {
+            "label": "Sale confirmed",
+            "helper": "A company confirmed the sale on one of your leads — commission has been released to your earnings."
+          },
+          "verification_started": {
+            "label": "Sale denied — verification started",
+            "helper": "A company said the lead did not convert. SellWell is contacting the client to verify."
+          },
+          "verification_result": {
+            "label": "Verification outcome",
+            "helper": "The result of a client-verification check on a disputed or expired lead."
+          },
+          "application_approved": {
+            "label": "Application approved or rejected",
+            "helper": "A company reviewed your application to one of their campaigns."
+          },
+          "partner_link_sale": {
+            "label": "Partner Link sale",
+            "helper": "A purchase was attributed to one of your tracked links — commission has been credited."
+          },
+          "withdrawal_status": {
+            "label": "Withdrawal status update",
+            "helper": "Your withdrawal request moved between pending, processing, completed, or rejected."
+          },
+          "lead_submitted": {
+            "label": "New hot lead",
+            "helper": "A Sales Partner submitted a hot lead on one of your campaigns. Reserve escrow to view the contact details."
+          },
+          "tracking_window_expiring": {
+            "label": "Tracking window expiring",
+            "helper": "A reserved lead's tracking window expires in 3 days. Confirm or deny the sale before it auto-resolves."
+          },
+          "lead_pending_escrow": {
+            "label": "Insufficient escrow for a new lead",
+            "helper": "A new lead arrived but your escrow balance is too low to reserve. Top up to unlock the contact details."
+          },
+          "low_escrow_balance": {
+            "label": "Low escrow balance",
+            "helper": "Your available balance is below the per-lead reservation for some of your campaigns."
+          },
+          "application_received": {
+            "label": "New application received",
+            "helper": "A Sales Partner applied to one of your campaigns and is waiting for your review."
+          }
+        }
+      },
+      "pagination": {
+        "prev": "Previous",
+        "next": "Next",
+        "page": "Page {page} of {total}"
+      }
+    },
+    "Overlay": {
+      "placeholder": {
+        "label":   "Coming soon",
+        "loading": "Loading profile…"
+      },
+      "profile": {
+        "subtitle": "Account details",
+        "info": "Profile info",
+        "banking": "Banking",
+        "security": "Security"
+      },
+      "help": {
+        "title": "Help",
+        "subtitle": "Guides & support",
+        "guides": "Guides",
+        "support": "Support"
+      }
+    },
+    "CompanyDashboard": {
+      "greeting": "Welcome back, {name}.",
+      "description": "Your incoming leads, your escrow, and what's waiting on you — at a glance.",
+      "kpi": {
+        "commissionsPaid": "Commissions paid",
+        "thisMonth": "This month",
+        "activePartners": "Active partners",
+        "leadsThisMonth": "Leads this month",
+        "vsPrev30d": "vs previous 30d",
+        "newApprovals": "new approvals 30d"
+      },
+      "chart": {
+        "title": "Commissions paid",
+        "subtitle": {
+          "7d": "Last 7 days",
+          "30d": "Last 30 days",
+          "90d": "Last 90 days",
+          "12m": "Last 12 months"
+        },
+        "range": {
+          "7d": "7d",
+          "30d": "30d",
+          "90d": "90d",
+          "12m": "12m"
+        },
+        "tooltip": {
+          "current": "Current",
+          "previous": "Previous"
+        },
+        "empty": {
+          "title": "No commissions paid yet",
+          "body": "Once your sales partners start closing leads or driving Partner Link sales, the payout history will populate this chart."
+        }
+      },
+      "leadsInbox": {
+        "title": "Leads inbox",
+        "viewAll": "View all",
+        "noCompany": "No company",
+        "filter": {
+          "all": "All",
+          "awaitingReserve": "Awaiting reservation",
+          "inWindow": "In tracking window",
+          "awaitingConfirm": "Awaiting confirmation",
+          "disputed": "Disputed"
+        },
+        "empty": {
+          "allTitle": "No leads yet.",
+          "allBody": "Sales partners haven't sent any leads to your campaigns yet. Make sure your campaigns are published and your commission terms are competitive.",
+          "awaitingReserveTitle": "Nothing waiting for reservation.",
+          "awaitingReserveBody": "New leads from your sales partners appear here. Reserve escrow to reveal contact info and start the tracking window.",
+          "inWindowTitle": "No leads in tracking window.",
+          "inWindowBody": "Reserved leads currently being worked by your sales partners show up here.",
+          "awaitingConfirmTitle": "No tracking windows closing.",
+          "awaitingConfirmBody": "Acknowledged leads within 14 days of their tracking window expiring will show up here.",
+          "disputedTitle": "Nothing under verification.",
+          "disputedBody": "Leads where SellWell is contacting the client to verify a sale will show up here."
+        }
+      },
+      "escrow": {
+        "title": "Escrow wallet",
+        "available": "Available",
+        "reserved": "Reserved",
+        "totalDeposited": "Total deposited",
+        "fundWallet": "Fund wallet",
+        "withdraw": "Withdraw",
+        "health": {
+          "active": {
+            "label": "Healthy",
+            "message": "Your wallet is healthy. You can reserve and view all incoming leads."
+          },
+          "moderate": {
+            "label": "Moderate",
+            "message": "Balance is sufficient but consider topping up soon."
+          },
+          "low": {
+            "label": "Low",
+            "message": "Low balance — you may not be able to reserve some leads. Top up to stay unblocked."
+          },
+          "at-risk": {
+            "label": "At risk",
+            "message": "No funds available. Lead contact details are hidden until you fund your wallet. Campaigns remain active."
+          }
+        }
+      },
+      "applications": {
+        "title": "Applications",
+        "viewAll": "View all",
+        "when": {
+          "today": "today",
+          "daysAgo": "{count, plural, =1 {1d ago} other {#d ago}}"
+        },
+        "empty": {
+          "title": "No applications yet.",
+          "body": "Sales partners who apply to your campaigns will show up here for you to approve or reject."
+        }
+      },
+      "activeCampaigns": {
+        "title": "My campaigns",
+        "viewAll": "View all",
+        "metaLine": "{partners, plural, =0 {No partners} =1 {1 partner} other {# partners}} · {leads, plural, =0 {no leads} =1 {1 lead} other {# leads}}",
+        "empty": {
+          "title": "No campaigns yet.",
+          "body": "Publish your first campaign so sales partners can apply and start sending leads.",
+          "cta": "Create a campaign"
+        }
+      },
+      "partnerLinks": {
+        "title": "Partner Link performance",
+        "viewAll": "View all",
+        "col": {
+          "campaign": "Campaign",
+          "clicks": "Clicks",
+          "conversions": "Conversions",
+          "conversionRate": "Conv. rate",
+          "commissionsPaid": "Commissions paid"
+        },
+        "empty": {
+          "title": "No Partner Links enabled.",
+          "body": "Enable Partner Links on a campaign to let sales partners drive online sales with a tracked URL. Performance shows up here.",
+          "cta": "Manage campaigns"
+        }
+      }
+    }
+  },
+  "Marketplace": {
+    "title": "Marketplace",
+    "description": "Browse campaigns from Algerian SaaS companies. Apply to the ones that fit your network — once approved, you can submit leads and generate Partner Links.",
+    "searchPlaceholder": "Search products or companies",
+    "filter": {
+      "category": "Category",
+      "commissionType": "Commission type",
+      "partnerLinks": "Partner Links",
+      "partnerLinksYes": "Available",
+      "partnerLinksNo": "Not available",
+      "commission": {
+        "all": "All commissions",
+        "percentage": "Percentage",
+        "flat": "Flat"
+      },
+      "application": {
+        "all": "All",
+        "unapplied": "Not applied yet",
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      }
+    },
+    "sort": {
+      "ariaLabel": "Sort campaigns",
+      "label": "Sort:",
+      "newest": "Newest first",
+      "commission_high": "Commission: high to low",
+      "commission_low": "Commission: low to high"
+    },
+    "card": {
+      "pctCommission": "{value}% commission",
+      "flatCommission": "{value} per sale",
+      "partnerLinks": "Partner Links",
+      "activePartners": "{count} active partners",
+      "view": "View"
+    },
+    "empty": {
+      "title": "No campaigns match your filters.",
+      "body": "Try clearing a filter or broadening your search. New campaigns are added regularly — check back soon."
+    },
+    "gate": {
+      "email": {
+        "heading": "Verify your email to browse campaigns.",
+        "body": "We sent a verification link to {email}. Once you verify, the marketplace unlocks instantly.",
+        "resend": "Resend verification email",
+        "resent": "Email sent — check your inbox",
+        "back": "Back to dashboard"
+      },
+      "pendingReview": {
+        "heading": "Your application is under review.",
+        "body": "Our team is reviewing the information you submitted. You'll receive an email at the address on file once your account is approved.",
+        "sla": "Most reviews complete within 2 to 5 business days.",
+        "contact": "Contact support",
+        "back": "Back to dashboard"
+      },
+      "moreInfoRequested": {
+        "heading": "We need a bit more from you.",
+        "body": "An admin reviewed your application and asked for additional information before it can be approved.",
+        "noteLabel": "Admin's note",
+        "editProfile": "Update your profile",
+        "contact": "Contact support"
+      }
+    },
+    "detail": {
+      "backToMarketplace": "Back to marketplace",
+      "unknownCompany": "Unknown company",
+      "errorBody": "We couldn't load this campaign. Please try again.",
+      "tiers": {
+        "title": "Pricing tiers",
+        "singleTitle": "Standard pricing"
+      },
+      "meta": {
+        "trackingWindow": "Tracking window",
+        "trackingWindowValue": "{days} days",
+        "partnerLinks": "Partner Links",
+        "partnerLinksAvailable": "Available"
+      },
+      "apply": {
+        "headline": "Commission",
+        "pctCommission": "{value}% per sale",
+        "flatCommission": "{value} DA per sale",
+        "apply": "Apply to this campaign",
+        "submit": "Send application",
+        "submitting": "Sending…",
+        "cancel": "Cancel",
+        "success": "Application sent",
+        "toastSuccessTitle": "Application sent",
+        "toastSuccessBody": "The company will review your pitch and respond.",
+        "toastAlreadyAppliedTitle": "Already applied",
+        "toastAlreadyAppliedBody": "You've already applied to this campaign — check back for the company's decision.",
+        "pitchLabel": "Why are you a good fit?",
+        "pitchPlaceholder": "Briefly describe how you'd sell this product — your network, experience, channels.",
+        "statusHeadline": "Your application",
+        "statusBody": {
+          "pending": "Awaiting the company's review.",
+          "approved": "Approved — you can submit leads and generate Partner Links.",
+          "rejected": "Not approved this time. You may re-apply after the cooldown."
+        },
+        "errors": {
+          "tooShort": "Tell the company a bit more — at least 20 characters.",
+          "generic": "Couldn't send your application. Please try again."
+        }
+      },
+      "sections": {
+        "about": "About this campaign",
+        "targetAudience": "Who this is for",
+        "companySize": "{range} employees",
+        "requirements": "Requirements",
+        "tags": "Product tags"
+      },
+      "company": {
+        "aboutCompany": "About the company",
+        "visitWebsite": "Visit website"
+      },
+      "salesKit": {
+        "title": "Sales Kit",
+        "preview": "Preview",
+        "watch": "Watch",
+        "download": "Download",
+        "openInNewTab": "Open",
+        "close": "Close",
+        "unpreviewableTitle": "Preview not available",
+        "unpreviewableBody": "This file type can't be previewed in the browser. Open it in a new tab or download to view.",
+        "slot": {
+          "pitch_deck": "Pitch Deck",
+          "one_pager": "Product One-Pager",
+          "pricing_sheet": "Pricing Sheet",
+          "demo_video_url": "Demo Video"
+        },
+        "emptySlot": {
+          "pitch_deck": "No pitch deck yet",
+          "one_pager": "No one-pager yet",
+          "pricing_sheet": "No pricing sheet yet",
+          "demo_video_url": "No demo video yet"
+        }
+      }
+    }
+  },
+  "Applications": {
+    "title": "My applications",
+    "description": "Every campaign you've applied to. Approvals unlock submitting leads and generating Partner Links.",
+    "countSubtitle": "{count, plural, =0 {No applications yet} =1 {# application} other {# applications}}",
+    "searchPlaceholder": "Search by product or company",
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "table": {
+      "campaign": "Campaign",
+      "pitch": "Your pitch",
+      "applied": "Applied",
+      "status": "Status",
+      "actions": "Actions",
+      "viewCampaign": "View campaign",
+      "submitLead": "Submit a lead",
+      "categoryUnknown": "Uncategorized",
+      "companyUnknown": "Unknown company"
+    },
+    "time": {
+      "justNow": "just now",
+      "minsAgo": "{count, plural, =1 {1 min ago} other {#m ago}}",
+      "hoursAgo": "{count, plural, =1 {1 hour ago} other {#h ago}}",
+      "daysAgo": "{count, plural, =1 {1 day ago} other {#d ago}}"
+    },
+    "empty": {
+      "all": {
+        "title": "You haven't applied to anything yet.",
+        "body": "Browse the marketplace and apply to campaigns that fit your network.",
+        "cta": "Browse marketplace"
+      },
+      "pending": {
+        "title": "Nothing pending — all caught up.",
+        "body": "Your past applications have all been reviewed."
+      },
+      "approved": {
+        "title": "No approved campaigns yet.",
+        "body": "Once a company approves your application, it shows up here and you can start submitting leads."
+      },
+      "rejected": {
+        "title": "No rejections — keep going.",
+        "body": "You haven't been turned down on anything. That's a good sign."
+      }
+    },
+    "detail": {
+      "sections": {
+        "pitch": "Your pitch",
+        "timeline": "Status timeline",
+        "campaign": "Campaign",
+        "actions": "Next steps"
+      },
+      "campaign": {
+        "commission": "Commission",
+        "pctCommission": "{value}% per sale",
+        "flatCommission": "{value} DA per sale",
+        "trackingWindow": "Tracking window",
+        "trackingWindowValue": "{days} days",
+        "partnerLinks": "Partner Links",
+        "partnerLinksAvailable": "Available",
+        "partnerLinksUnavailable": "Not available",
+        "campaignStatus": "Campaign status"
+      },
+      "timeline": {
+        "submitted": "Submitted",
+        "submittedBody": "We sent your pitch to the company.",
+        "underReview": "Under review",
+        "underReviewBody": "The company is reading your application.",
+        "approved": "Approved",
+        "approvedBody": "You're cleared to sell this campaign — submit leads or generate a Partner Link.",
+        "rejected": "Not approved",
+        "rejectedBody": "The company decided not to move forward this time."
+      },
+      "actions": {
+        "viewCampaign": "View campaign",
+        "viewCampaignDescription": "See the full product page, tiers, and Sales Kit.",
+        "submitLead": "Submit a lead",
+        "submitLeadDescription": "Register a hot prospect for this campaign.",
+        "generateLink": "Generate Partner Link",
+        "generateLinkDescription": "Create a tracked redirect URL to share.",
+        "reapplyAvailable": "Re-apply available",
+        "reapplyAvailableDescription": "You can submit a new application to this campaign now.",
+        "reapplyCooldown": "Re-apply in {days} days",
+        "reapplyCooldownDescription": "Companies set a cooldown before partners can re-apply after a rejection.",
+        "openCampaign": "Open campaign"
+      },
+      "rejection": {
+        "label": "Why this didn't move forward",
+        "fallback": "The company didn't share a specific reason. You can try again once the cooldown ends — strengthen your pitch with concrete proof of pipeline."
+      }
+    },
+    "companyList": {
+      "title": "Applications",
+      "description": "Sales partners applying to your campaigns. Approve to unlock lead submission and Partner Links for them.",
+      "searchPlaceholder": "Search by partner, campaign, or pitch",
+      "filteredBy": "Filtered by campaign",
+      "tabs": {
+        "all": "All",
+        "pending": "Pending",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "table": {
+        "partner": "Partner",
+        "campaign": "Campaign",
+        "pitch": "Pitch",
+        "applied": "Applied",
+        "status": "Status",
+        "partnerUnknown": "Unknown partner"
+      },
+      "empty": {
+        "all": {
+          "title": "No applications yet.",
+          "body": "Once partners discover your campaigns and apply, they show up here."
+        },
+        "pending": {
+          "title": "Nothing pending — all caught up.",
+          "body": "Every application has been reviewed."
+        },
+        "approved": {
+          "title": "No approved partners yet.",
+          "body": "Once you approve a partner, they appear here and can start submitting leads."
+        },
+        "rejected": {
+          "title": "No rejections yet.",
+          "body": "Rejected applications land here so you can revisit reasoning later."
+        }
+      }
+    },
+    "companyDetail": {
+      "unknownPartner": "Unknown partner",
+      "approvedFooter": "Approved {when}",
+      "rejectedFooter": "Rejected {when}",
+      "rejectedReasonPrefix": "Reason:",
+      "gateTooltip": "Verify your email and finish admin review to act on applications.",
+      "sections": {
+        "partner": "Partner profile"
+      },
+      "partner": {
+        "linkedin": "View LinkedIn profile",
+        "phone": "Phone",
+        "bio": "About the partner",
+        "cv": "CV",
+        "cvDefaultLabel": "Partner CV",
+        "cvHint": "Click to preview or download",
+        "cvLabels": {
+          "preview": "Preview",
+          "download": "Download",
+          "watch": "Watch",
+          "openInNewTab": "Open in new tab",
+          "close": "Close",
+          "unpreviewableTitle": "Preview unavailable",
+          "unpreviewableBody": "This file type can't be previewed inline. Download it to open it."
+        },
+        "categories": "Preferred categories",
+        "skills": "Skill tags"
+      },
+      "actions": {
+        "approve": "Approve",
+        "reject": "Reject"
+      },
+      "confirmReject": {
+        "title": "Reject this application?",
+        "description": "The partner sees the reason you write here. Be specific — vague rejections damage trust and lead to re-applies that don't improve.",
+        "confirm": "Reject application",
+        "cancel": "Cancel",
+        "reasonLabel": "Reason for rejection",
+        "reasonPlaceholder": "e.g. Looking for partners with prior B2B SaaS sales experience in the financial-services vertical."
+      },
+      "toast": {
+        "approveSuccessTitle": "Application approved",
+        "approveSuccessBody": "The partner can now submit leads and generate Partner Links for this campaign.",
+        "rejectSuccessTitle": "Application rejected",
+        "rejectSuccessBody": "The partner has been notified with your reason.",
+        "errorTitle": "Couldn't update the application",
+        "errorBody": "Something went wrong. Try again in a moment."
+      }
+    },
+    "adminForward": {
+      "title": "Applications are role-scoped.",
+      "body": "Admins manage applications from the admin panel. The admin-facing applications view ships in Phase 9 (Admin).",
+      "cta": "Open admin panel"
+    }
+  },
+  "Leads": {
+    "title": "My leads",
+    "description": "Every lead you've submitted. Track your pipeline, watch acknowledgment windows, and see your commission as deals close.",
+    "countSubtitle": "{count, plural, =0 {No leads yet} =1 {# lead} other {# leads}}",
+    "searchPlaceholder": "Search by client, company, or campaign",
+    "submitCta": "Submit a lead",
+    "submitForCampaignCta": "Submit a lead for this campaign",
+    "tabs": {
+      "all": "All",
+      "draft": "Drafts",
+      "active": "Active",
+      "expiringSoon": "Expiring soon",
+      "awaiting": "Awaiting confirmation",
+      "closed": "Closed"
+    },
+    "table": {
+      "client": "Client",
+      "campaign": "Campaign",
+      "tier": "Tier",
+      "status": "Status",
+      "submitted": "Submitted",
+      "commission": "Commission",
+      "actions": "Actions",
+      "viewCampaign": "View campaign",
+      "noCommission": "—",
+      "expiresInDays": "{days, plural, =0 {Expires today} =1 {1 day left} other {# days left}}"
+    },
+    "time": {
+      "justNow": "just now",
+      "minsAgo": "{count, plural, =1 {1 min ago} other {#m ago}}",
+      "hoursAgo": "{count, plural, =1 {1 hour ago} other {#h ago}}",
+      "daysAgo": "{count, plural, =1 {1 day ago} other {#d ago}}"
+    },
+    "empty": {
+      "all": {
+        "title": "You haven't earned a commission yet.",
+        "body": "Save your first lead as a draft — your client name, phone, the campaign, and a quick note. Send it to the company when you're ready and the deal locks to you.",
+        "cta": "Save your first lead"
+      },
+      "draft": {
+        "title": "No drafts in progress.",
+        "body": "Drafts are private to you — capture a lead while you're still working it, add notes over time, and send to the company only when it's ready.",
+        "cta": "Save a new lead"
+      },
+      "active": {
+        "title": "No active leads right now.",
+        "body": "Acknowledged leads with a tracking window in flight show up here."
+      },
+      "expiringSoon": {
+        "title": "Nothing expiring soon.",
+        "body": "Leads with under 48 hours left in their tracking window show up here so you can nudge the company."
+      },
+      "awaiting": {
+        "title": "Nothing awaiting confirmation.",
+        "body": "Leads waiting on the company's first acknowledgment, an escrow top-up, or SellWell verification show up here."
+      },
+      "closed": {
+        "title": "No closed leads yet.",
+        "body": "Converted, not-converted, and expired leads land here once they reach a final state."
+      }
+    },
+    "detail": {
+      "openCampaign": "Open campaign",
+      "verifyingShort": "Verifying",
+      "draftChip": "Draft — not sent",
+      "trackingDaysLeft": "{days, plural, =0 {Expires today} =1 {1 day left} other {# days left}}",
+      "actions": {
+        "sendToCompany": "Send to company",
+        "sending": "Sending…",
+        "sentTitle": "Lead sent",
+        "sentBody": "We sent your lead to the company. You'll see status updates as they reserve escrow and confirm the sale."
+      },
+      "sections": {
+        "client": "Client",
+        "timeline": "Status timeline",
+        "documents": "Documents",
+        "campaign": "Campaign",
+        "commission": "Commission"
+      },
+      "client": {
+        "name": "Name",
+        "company": "Company",
+        "phone": "Phone",
+        "email": "Email",
+        "noEmail": "—"
+      },
+      "notes": {
+        "label": "Conversation notes",
+        "add": "Add note",
+        "empty": "No notes yet — capture what was discussed, what's next, anything worth remembering.",
+        "composeLabel": "New note",
+        "composePlaceholder": "What just happened? Call recap, follow-up sent, objection raised, demo scheduled…",
+        "setCustomDate": "Set custom date & time",
+        "useNow": "Use now",
+        "clearCustomDate": "Clear custom date",
+        "dateLabel": "Date",
+        "timeLabel": "Time",
+        "save": "Save note",
+        "saving": "Saving…",
+        "cancel": "Cancel"
+      },
+      "documents": {
+        "label": "Documents",
+        "add": "Add document",
+        "lockedAfterSubmit": "Locked once sent",
+        "emptyDraft": "Attach contracts, signed quotes, screenshots, or paste a Loom / Drive link. Editable until you send the lead.",
+        "emptySubmitted": "No documents were attached when this lead was sent.",
+        "modeFile": "Upload file",
+        "modeUrl": "Paste link",
+        "fileLabel": "File",
+        "urlLabel": "Link",
+        "urlPlaceholder": "https://www.loom.com/share/…",
+        "titleLabel": "Title",
+        "titlePlaceholder": "e.g. Signed quote — May 8",
+        "save": "Save",
+        "saving": "Saving…",
+        "cancel": "Cancel",
+        "remove": "Remove",
+        "preview": "Preview",
+        "download": "Download",
+        "watch": "Watch",
+        "openInNewTab": "Open",
+        "close": "Close",
+        "unpreviewableTitle": "Preview not available",
+        "unpreviewableBody": "This file type can't be previewed inline. Download to open it.",
+        "errorLabelRequired": "Give the document a title.",
+        "errorFileRequired": "Pick a file to upload.",
+        "errorUrlInvalid": "Paste a valid http(s) link.",
+        "errorGeneric": "Something went wrong. Please try again."
+      },
+      "campaign": {
+        "commissionLabel": "Commission terms",
+        "pctCommission": "{value}% per sale",
+        "flatCommission": "{value} DA per sale",
+        "trackingWindow": "Tracking window",
+        "trackingWindowValue": "{days} days",
+        "campaignStatus": "Campaign status"
+      },
+      "commission": {
+        "tierPrice": "Tier price",
+        "salePrice": "Sale price",
+        "yourCommission": "Your commission",
+        "platformFee": "Platform fee",
+        "totalReservation": "Total reserved by company",
+        "actualSale": "Actual sale amount",
+        "expectedNote": "Expected — finalized when the company confirms the sale.",
+        "confirmedNote": "Confirmed — released to your earnings balance.",
+        "confirmedShort": "Confirmed",
+        "verifiedNote": "Verified by the client after the company denied the sale.",
+        "lostNote": "The client confirmed no purchase. Reserved funds returned to the company.",
+        "disputedNote": "Held while SellWell verifies with the client.",
+        "expiredNote": "Tracking window closed without a confirmation."
+      },
+      "timeline": {
+        "draft": "Draft saved",
+        "draftBody": "Lead saved privately — only you can see it. Add notes, refine details, then send when ready.",
+        "submitted": "Submitted",
+        "submittedBody": "We sent the lead to the company.",
+        "submittedDraftBody": "Click \"Send to company\" in the footer when this lead is ready — that's when the 7-day clock starts.",
+        "acknowledged": "Acknowledged",
+        "acknowledgedBody": "The company reserved escrow and viewed the contact details.",
+        "acknowledgedPendingBody": "Waiting for the company to reserve escrow.",
+        "pendingEscrowBody": "The company's escrow balance is too low — they need to top up to view this lead.",
+        "trackingWindow": "Tracking window",
+        "trackingWindowBody": "The company has until {date} to confirm the sale.",
+        "trackingWindowExpiringBody": "Only {days, plural, =0 {hours} =1 {1 day} other {# days}} left — consider nudging the company.",
+        "converted": "Converted",
+        "convertedBody": "The company confirmed the sale. Commission released.",
+        "convertedVerified": "Confirmed by client",
+        "convertedVerifiedBody": "The client confirmed the sale after the company denied it. Commission released.",
+        "notConverted": "Not converted",
+        "notConvertedBody": "The client confirmed no purchase. No commission.",
+        "disputed": "Verifying with client",
+        "disputedBody": "SellWell is reaching out to the client to confirm whether a sale happened.",
+        "expired": "Expired",
+        "expiredBody": "The company didn't acknowledge within 7 days. No commission charged.",
+        "expiredVerifying": "Tracking window expired — verifying",
+        "expiredVerifyingBody": "The window closed without a confirmation. SellWell is verifying with the client."
+      },
+      "denial": {
+        "label": "Company's reason",
+        "fallback": "The company didn't share a specific reason."
+      }
+    },
+    "companyInbox": {
+      "title": "Leads inbox",
+      "description": "Incoming hot leads across your campaigns. Reserve escrow to reveal client contact details and start the tracking window.",
+      "searchPlaceholder": "Search by partner, client, or campaign",
+      "filteredBy": "Filtered by campaign",
+      "tabs": {
+        "all": "All",
+        "awaitingReserve": "Awaiting reservation",
+        "inWindow": "In tracking window",
+        "awaitingConfirm": "Awaiting confirmation",
+        "disputed": "Disputed",
+        "closed": "Closed"
+      },
+      "table": {
+        "partner": "Partner",
+        "client": "Client",
+        "campaign": "Campaign",
+        "reservation": "Reservation",
+        "submitted": "Submitted",
+        "status": "Status",
+        "partnerUnknown": "Unknown partner"
+      },
+      "cells": {
+        "balanceAfter": "Balance after",
+        "insufficient": "Insufficient funds — top up to reserve.",
+        "locked": "Reserve to reveal"
+      },
+      "wallet": {
+        "ariaLabel": "Escrow wallet summary",
+        "eyebrow": "Escrow wallet",
+        "available": "Available",
+        "reserved": "Reserved",
+        "deposited": "Total deposited",
+        "fund": "Fund wallet",
+        "withdraw": "Withdraw",
+        "health": {
+          "active": "Active",
+          "moderate": "Moderate",
+          "low": "Low",
+          "at-risk": "At risk"
+        },
+        "legend": {
+          "available": "Available · {pct}%",
+          "reserved": "Reserved · {pct}%"
+        }
+      },
+      "actions": {
+        "reserveAndView": "Reserve & view"
+      },
+      "sort": {
+        "ariaLabel": "Sort leads",
+        "label": "Sort:",
+        "newest": "Newest",
+        "reservation_high": "Reservation: high to low",
+        "reservation_low": "Reservation: low to high"
+      },
+      "filter": {
+        "campaign": "Campaign",
+        "partner": "Partner"
+      },
+      "activity": {
+        "title": "Recent activity",
+        "countSubtitle": "{count, plural, =0 {no transactions} =1 {1 total} other {# total}}",
+        "empty": "No wallet activity yet. Fund your wallet or reserve a lead to see entries here.",
+        "type": {
+          "deposit": "Deposit",
+          "reservation": "Reserved on lead",
+          "release_commission": "Commission released",
+          "release_platform_fee": "Platform fee released",
+          "return": "Returned to wallet",
+          "withdrawal": "Withdrawal"
+        }
+      },
+      "reserveConfirm": {
+        "headline": "Held in escrow, not spent",
+        "subheadline": "Confirm to freeze the reservation and reveal {name}.",
+        "thisLead": "this lead",
+        "amountLabel": "Reservation",
+        "commission": "Commission to partner",
+        "platformFee": "Platform fee",
+        "total": "Total reservation",
+        "availableBefore": "Available before",
+        "availableAfter": "Available after",
+        "refundStrip": "Returns to your wallet in full if the deal doesn't close within {days} days.",
+        "insufficientHelper": "Your wallet doesn't cover this reservation. Top up to unlock this lead.",
+        "tcs": "By reserving, you accept the <link>Escrow Terms</link>.",
+        "confirm": "Reserve & view",
+        "topUp": "Top up wallet",
+        "cancel": "Cancel"
+      },
+      "toast": {
+        "reserveSuccessTitle": "Lead reserved",
+        "reserveSuccessBody": "The contact details are now visible. The tracking window has started.",
+        "insufficientTitle": "Insufficient funds",
+        "insufficientBody": "Top up your escrow wallet to reserve this lead.",
+        "confirmSaleSuccessTitle": "Sale confirmed",
+        "confirmSaleSuccessBody": "Commission released to the partner. The platform fee was settled.",
+        "denySuccessTitle": "Verification started",
+        "denySuccessBody": "We'll contact the client to verify. Your escrow stays frozen until we rule.",
+        "errorTitle": "Couldn't update the lead",
+        "errorBody": "Something went wrong. Try again in a moment."
+      },
+      "confirmSale": {
+        "headline": "Confirm the sale",
+        "subheadline": "Releases the partner's commission and the platform fee from your escrow for {name}.",
+        "thisLead": "this lead",
+        "saleAmountLabel": "Sale amount",
+        "commission": "Commission to partner",
+        "platformFee": "Platform fee",
+        "totalReleased": "Total released",
+        "releaseStrip": "On confirm, commission goes to the partner and the platform fee goes to SellWell. The lead is marked Converted.",
+        "tcs": "By confirming, you accept the <link>Escrow Terms</link> and certify the sale closed.",
+        "confirm": "Confirm sale",
+        "cancel": "Cancel"
+      },
+      "denyConversion": {
+        "headline": "Mark as not converted",
+        "subheadline": "Tell us why the deal didn't close with {name}. We'll verify with the client before any escrow movement.",
+        "thisLead": "this lead",
+        "reasonLabel": "Reason for denial",
+        "reasonPlaceholder": "What happened? Did the client back out, choose a competitor, push the project, or never respond? Be specific — the partner and our verification team will read this.",
+        "reasonHelper": "Minimum 20 characters. The partner sees this verbatim.",
+        "reasonError": "Please provide at least {min} characters so the partner has real context.",
+        "verificationStrip": "Your escrow stays frozen. SellWell will contact the client to verify. If the client confirms there was no sale, the full amount returns to your wallet.",
+        "tcs": "By submitting, you accept the <link>Escrow Terms</link> and confirm this denial is in good faith.",
+        "confirm": "Submit for verification",
+        "cancel": "Cancel"
+      },
+      "empty": {
+        "all": {
+          "title": "No leads yet.",
+          "body": "When approved partners submit hot leads, they show up here."
+        },
+        "awaitingReserve": {
+          "title": "Nothing waiting on reservation.",
+          "body": "Leads awaiting your Reserve & View action will show up here."
+        },
+        "inWindow": {
+          "title": "No active tracking windows.",
+          "body": "Reserved leads with more than 14 days left in the window appear here."
+        },
+        "awaitingConfirm": {
+          "title": "Nothing awaiting confirmation.",
+          "body": "Leads with under 14 days left to confirm a sale show up here."
+        },
+        "disputed": {
+          "title": "No active disputes.",
+          "body": "Leads SellWell is verifying with the client appear here."
+        },
+        "closed": {
+          "title": "No closed leads yet.",
+          "body": "Converted, not-converted, and expired leads land here once they reach a final state."
+        }
+      }
+    },
+    "companyDetail": {
+      "titleLocked": "Locked — reserve to reveal",
+      "sections": {
+        "notes": "Notes"
+      },
+      "footer": {
+        "reserveAndView": "Reserve & view",
+        "confirmSale": "Confirm sale",
+        "didNotConvert": "Did not convert"
+      },
+      "locked": {
+        "reserveCta": "Reserve & view",
+        "client": {
+          "title": "Client identity is locked",
+          "body": "Reserve escrow to reveal the client's name, company, phone, and email. The amount is held — not spent — and returns in full if the deal doesn't close."
+        },
+        "notes": {
+          "title": "Partner's conversation notes are locked",
+          "body": "The partner's record of calls, demos, and objections becomes visible the moment you reserve. You'll also be able to add your own internal notes."
+        },
+        "documents": {
+          "title": "Attached documents are locked",
+          "body": "Any contracts, signed quotes, or supporting files the partner attached unlock once you reserve."
+        }
+      },
+      "notesSplit": {
+        "fromPartner": "From the partner",
+        "yourNotes": "Your notes",
+        "addYourNote": "Add a note",
+        "partnerEmpty": "The partner didn't attach any conversation notes.",
+        "companyEmpty": "No internal notes yet. Add your first note above."
+      },
+      "notes": {
+        "label": "Internal notes",
+        "add": "Add note",
+        "empty": "No internal notes yet. Add your first note above.",
+        "composeLabel": "New internal note",
+        "composePlaceholder": "Pricing approved by their CFO, contract in legal, expected to close end of week…",
+        "setCustomDate": "Set custom date & time",
+        "useNow": "Use now",
+        "clearCustomDate": "Clear custom date",
+        "dateLabel": "Date",
+        "timeLabel": "Time",
+        "save": "Save note",
+        "saving": "Saving…",
+        "cancel": "Cancel"
+      }
+    },
+    "adminForward": {
+      "title": "Leads are role-scoped.",
+      "body": "Admins handle disputes from the admin panel. The admin-facing leads view ships in Phase 9 (Admin).",
+      "cta": "Open admin panel"
+    }
+  },
+  "LeadForm": {
+    "title": "Submit a lead",
+    "description": "Register a hot prospect you've already qualified. The company sees the lead, reserves escrow, contacts the client, and you get commission once the sale is confirmed.",
+    "back": "Back to leads",
+    "section": {
+      "campaign": "Campaign",
+      "client": "Client",
+      "context": "Context",
+      "attachments": "Attachments"
+    },
+    "campaign": {
+      "label": "Campaign",
+      "placeholder": "Select an approved + active campaign",
+      "helper": "You can only submit leads for campaigns the company has approved you on AND that are currently active.",
+      "noOptionsTitle": "Nothing to submit a lead for yet.",
+      "noOptionsBody": "You need at least one approved application on an active campaign. Browse the marketplace to get started.",
+      "noOptionsCta": "Browse marketplace"
+    },
+    "tier": {
+      "label": "Pricing tier",
+      "placeholder": "Select a tier",
+      "helper": "Pick the tier the client is most likely to buy. The company can adjust on confirmation."
+    },
+    "client": {
+      "fullNameLabel": "Client full name",
+      "fullNamePlaceholder": "e.g. Mehdi Touati",
+      "companyLabel": "Client company name",
+      "companyPlaceholder": "Optional — e.g. Touati Imports SARL",
+      "phoneLabel": "Client phone",
+      "phonePlaceholder": "+213 555 12 34 56",
+      "emailLabel": "Client email",
+      "emailPlaceholder": "Optional — name@company.dz"
+    },
+    "firstNote": {
+      "label": "First note (optional)",
+      "placeholder": "What's been discussed, how warm the lead is, what they're evaluating, when they're ready to buy.",
+      "helper": "Saved as the first conversation note. You can add more notes over time from the lead detail."
+    },
+    "attachments": {
+      "label": "Attach documents (optional)",
+      "helper": "Contracts, signed quotes, screenshots, briefs — up to 10 MB each. You can also paste Loom / Drive links from the lead detail after saving."
+    },
+    "saveDraft": "Save as draft",
+    "savingDraft": "Saving…",
+    "cancel": "Cancel",
+    "errors": {
+      "required": "This field is required.",
+      "phoneFormat": "Please enter a valid phone number.",
+      "emailFormat": "Please enter a valid email address.",
+      "campaignRequired": "Pick a campaign first.",
+      "tierRequired": "Pick a tier."
+    },
+    "draftSavedTitle": "Draft saved",
+    "draftSavedBody": "Your lead is saved privately. Add notes, refine details, and send to the company from the lead detail when you're ready."
+  },
+  "Escrow": {
+    "title": "Escrow wallet",
+    "description": "Fund your wallet, review every transaction, and track your withdrawal requests. Your money stays in escrow until each lead resolves.",
+    "wallet": {
+      "ariaLabel": "Escrow wallet summary",
+      "eyebrow": "Escrow wallet",
+      "available": "Available",
+      "reserved": "Reserved",
+      "deposited": "Total deposited",
+      "fund": "Fund wallet",
+      "withdraw": "Withdraw",
+      "health": {
+        "active": "Active",
+        "moderate": "Moderate",
+        "low": "Low",
+        "at-risk": "At risk"
+      },
+      "legend": {
+        "available": "Available · {pct}%",
+        "reserved": "Reserved · {pct}%"
+      }
+    },
+    "history": {
+      "title": "Wallet history",
+      "countSubtitle": "{count, plural, =0 {no transactions} =1 {1 total} other {# total}}",
+      "tabs": {
+        "all": "All",
+        "deposit": "Deposits",
+        "reservation": "Reservations",
+        "release": "Releases",
+        "return": "Returns",
+        "withdrawal": "Withdrawals"
+      },
+      "table": {
+        "date": "Date",
+        "type": "Type",
+        "description": "Description",
+        "relatedLead": "Lead",
+        "amount": "Amount",
+        "balanceAfter": "Balance after"
+      },
+      "leadRef": "Lead #{id}",
+      "empty": {
+        "title": "No transactions in this view.",
+        "body": "Wallet activity for this category will appear here as it happens."
+      }
+    },
+    "withdrawals": {
+      "title": "Withdrawal requests",
+      "countSubtitle": "{count, plural, =0 {no requests} =1 {1 total} other {# total}}",
+      "table": {
+        "date": "Requested",
+        "amount": "Amount",
+        "method": "Method",
+        "status": "Status",
+        "proof": "Proof",
+        "notes": "Notes"
+      },
+      "proof": "Download",
+      "empty": {
+        "title": "No withdrawals yet.",
+        "body": "Submit a withdrawal request from the wallet header. Requests are processed manually within a few business days."
+      }
+    },
+    "adminForward": {
+      "title": "Escrow is company-scoped.",
+      "body": "Admins manage withdrawals from the admin panel. The admin-facing withdrawals queue ships in Phase 9 (Admin).",
+      "cta": "Open admin panel"
+    },
+    "fund": {
+      "back": "Back to escrow",
+      "title": "Fund your wallet",
+      "description": "Top up your escrow. Money you deposit stays yours until you reserve a lead — refundable on demand, every move logged on your wallet ledger.",
+      "trustStrip": {
+        "title": "Refundable until reserved.",
+        "body": "We never spend a dinar without your approval. Any unreserved balance returns to you on demand."
+      },
+      "currentBalance": "Currently available in your wallet",
+      "methodLabel": "Pay with",
+      "amountLabel": "Amount",
+      "customLabel": "Or enter a custom amount",
+      "customPlaceholder": "1000",
+      "customHelper": "Minimum {min}. Amounts are rounded to the nearest 500 DZD.",
+      "method": {
+        "cib": {
+          "name": "CIB card",
+          "tagline": "All Algerian banks",
+          "eta": "Instant",
+          "fee": "+1.5%",
+          "limit": "≤ 2,000,000"
+        },
+        "edahabia": {
+          "name": "EDAHABIA card",
+          "tagline": "Algérie Poste",
+          "eta": "Instant",
+          "fee": "+1.5%",
+          "limit": "≤ 200,000 / day"
+        }
+      },
+      "methodMeta": {
+        "eta": "ETA",
+        "fee": "Fee",
+        "limit": "Limit"
+      },
+      "receipt": {
+        "eyebrow": "Order summary",
+        "refundableStrip": "Refundable until reserved · we never spend without your approval",
+        "youAdd": "You add",
+        "method": "Method",
+        "fee": "Chargily fee",
+        "arrival": "Arrival",
+        "youPay": "You pay",
+        "authorization": "By confirming, you authorize SellWell to debit your card via Chargily Pay. You can refund any unreserved balance at any time."
+      },
+      "info": {
+        "fee": {
+          "label": "Why a 1.5% fee?",
+          "body": "Chargily Pay charges 1.5% to process online card payments in Algeria. We pass it through transparently rather than hide it in the deposit amount."
+        },
+        "refundable": {
+          "label": "What does refundable mean?",
+          "body": "Any portion of your wallet that hasn't been reserved against a specific lead can be returned to you on demand. Once you reserve a lead, only that lead's escrow is frozen."
+        }
+      },
+      "confirmWithTotal": "Confirm and pay {total} DZD",
+      "confirmFallback": "Pick a method and amount",
+      "confirm": "Continue to payment",
+      "error": {
+        "belowMin": "The minimum top-up is {min}.",
+        "not500": "Amounts must be in steps of 500. Round to {snapped}.",
+        "exceedsMax": "{max} is the daily maximum for this method."
+      },
+      "toast": {
+        "successTitle": "Wallet topped up",
+        "successBody": "{amount} added to your escrow wallet.",
+        "errorTitle": "Couldn't top up",
+        "errorBody": "Something went wrong. Try again in a moment."
+      }
+    },
+    "withdraw": {
+      "back": "Back to escrow",
+      "title": "Request a withdrawal",
+      "description": "Pull funds from your available escrow balance. We review every request manually and send within a few business days.",
+      "trustStrip": {
+        "title": "Manual review before disbursement.",
+        "body": "Submitting freezes the amount from your available balance. You can cancel any time before our team approves the transfer."
+      },
+      "ledger": {
+        "eyebrow": "Your wallet",
+        "total": "Total in wallet",
+        "reserved": "Reserved on leads",
+        "pending": "Pending withdrawal",
+        "available": "Available to withdraw",
+        "availableSubtitle": "After reserved leads and pending withdrawals"
+      },
+      "info": {
+        "reserved": {
+          "label": "What is reserved?",
+          "body": "Funds earmarked for leads partners have submitted but you haven't accepted or rejected yet. They become available again if you reject the lead."
+        },
+        "pending": {
+          "label": "What does pending mean?",
+          "body": "While we review your withdrawal, this amount is frozen — it can't be spent or withdrawn again. Cancel the request to release it."
+        },
+        "fee": {
+          "label": "Are there withdrawal fees?",
+          "body": "No SellWell fee in V1. Your bank or Algérie Poste may apply incoming-transfer fees on their side."
+        },
+        "processing": {
+          "label": "Why 2–5 business days?",
+          "body": "Every withdrawal is reviewed manually before disbursement to verify your business identity and the destination account. Algerian bank processing adds 1–2 days on top."
+        }
+      },
+      "fillMax": "Use max ({amount})",
+      "amountLabel": "Withdrawal amount",
+      "customLabel": "Or enter a custom amount",
+      "customPlaceholder": "1000",
+      "customHelper": "Minimum {min}. Amounts are in steps of 500 DZD.",
+      "destinationLabel": "Where to send the funds",
+      "method": {
+        "ccp": {
+          "name": "CCP",
+          "helper": "Algeria Post account"
+        },
+        "bank": {
+          "name": "Bank account",
+          "helper": "Algerian bank with RIB"
+        }
+      },
+      "ccp": {
+        "account": "CCP account number",
+        "key": "Key (clé)",
+        "holder": "Account holder name",
+        "holderPlaceholder": "As shown on your CCP statement"
+      },
+      "bank": {
+        "name": "Bank name",
+        "namePlaceholder": "e.g. BEA, BNA, CPA…",
+        "rib": "RIB",
+        "holder": "Account holder name",
+        "holderPlaceholder": "As shown on your bank statement"
+      },
+      "destLabel": {
+        "ccp": "CCP ••••{last4}",
+        "bank": "{bank} ••••{last4}"
+      },
+      "receipt": {
+        "eyebrow": "Withdrawal preview",
+        "youWithdraw": "You withdraw",
+        "destination": "To",
+        "fee": "Fee",
+        "lands": "Estimated to arrive",
+        "youReceive": "You receive",
+        "availableAfter": "Available after this request",
+        "processPreview": "Process"
+      },
+      "timeline": {
+        "eyebrow": "Withdrawal request",
+        "title": "Submitted: {amount}",
+        "body": "Sending to {destination}, estimated to arrive {from} → {to}. We'll email you at each step.",
+        "stages": {
+          "submitted": {
+            "label": "Submitted",
+            "body": "Your withdrawal request is in our queue."
+          },
+          "review": {
+            "label": "Under review",
+            "body": "We're verifying your business identity and the destination account."
+          },
+          "approved": {
+            "label": "Approved",
+            "body": "Funds queued for transfer to your destination."
+          },
+          "processing": {
+            "label": "Processing",
+            "body": "Sent to your bank or CCP."
+          },
+          "received": {
+            "label": "Received",
+            "body": "Funds have landed in your account."
+          }
+        },
+        "cancelHint": "You can cancel at any time before we approve.",
+        "cancelLocked": "Cancellation is no longer possible — the transfer is in motion.",
+        "cancelCta": "Cancel request",
+        "doneCta": "Done"
+      },
+      "confirm": "Review withdrawal",
+      "error": {
+        "belowMin": "The minimum withdrawal is {min}.",
+        "not500": "Amounts must be in steps of 500. Round to {snapped}.",
+        "exceedsAvailable": "You can withdraw at most {available}."
+      },
+      "toast": {
+        "successTitle": "Withdrawal requested",
+        "successBody": "{amount} has been frozen from your available balance. We'll process it within a few business days.",
+        "errorTitle": "Couldn't submit withdrawal",
+        "errorBody": "Something went wrong. Try again in a moment."
+      }
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "PartnerLinksPerf": {
+    "title": "Partner Link performance",
+    "description": "Per-campaign rollup of every campaign where Partner Links are enabled. Switch the date range to focus on recent activity.",
+    "range": {
+      "7d": "Last 7 days",
+      "30d": "Last 30 days",
+      "90d": "Last 90 days",
+      "all": "All time"
+    },
+    "kpi": {
+      "clicks": "Total clicks",
+      "conversions": "Conversions",
+      "conversionRate": "Conv. rate",
+      "commissionsPaid": "Commissions paid"
+    },
+    "notFound": {
+      "eyebrow": "Page not available",
+      "title": "This page is for Tech Companies.",
+      "body": "The Partner Link performance dashboard is only available to companies that publish campaigns with Partner Links enabled.",
+      "cta": "Back to dashboard"
+    },
+    "pulse": {
+      "body": "Last 14 days. Today's value plus delta against the previous 7-day average — answers in two seconds whether the campaign is accelerating, plateauing, or sliding.",
+      "series": {
+        "clicks": "Clicks",
+        "conversions": "Conversions",
+        "convRate": "Conv. rate"
+      },
+      "delta": {
+        "pct": "{value}% vs 7d avg",
+        "pp": "{value}pp vs 7d avg",
+        "flat": "Flat vs 7d avg"
+      },
+      "topDay": "Top day",
+      "quietDay": "Quiet day",
+      "dayMeta": "{clicks} clicks · {conversions} conv."
+    },
+    "breakdown": {
+      "subtitle": "{count, plural, =0 {No partners with a link yet} =1 {1 partner with a link} other {# partners with a link}}",
+      "section": {
+        "summary": "Summary",
+        "pulse": "Daily pulse"
+      },
+      "totals": {
+        "clicks": "Clicks",
+        "conversions": "Conversions",
+        "conversionRate": "Conv. rate",
+        "commissionsPaid": "Commissions paid"
+      },
+      "table": {
+        "title": "Performance by partner",
+        "col": {
+          "partner": "Partner",
+          "link": "Partner Link",
+          "clicks": "Clicks",
+          "conversions": "Conv.",
+          "conversionRate": "Rate",
+          "commission": "Commission"
+        }
+      },
+      "empty": {
+        "title": "No partners on this campaign yet.",
+        "body": "Once approved partners generate a Partner Link, their performance shows up here."
+      }
+    }
+  },
+  "PartnerLinks": {
+    "title": "Partner Links",
+    "description": "Tracked redirects for the campaigns you can sell online. Share, watch clicks roll in, and earn commission on every confirmed sale.",
+    "searchPlaceholder": "Search by campaign or company",
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "noActivity": "No activity",
+      "paused": "Paused"
+    },
+    "kpi": {
+      "clicks": "Total clicks",
+      "conversions": "Conversions",
+      "rate": "Conversion rate",
+      "commission": "Commission earned"
+    },
+    "table": {
+      "campaign": "Campaign",
+      "link": "Link",
+      "clicks": "Clicks",
+      "conversions": "Conv.",
+      "performance": "Performance",
+      "trendAria": "Last 30 days of clicks"
+    },
+    "copy": {
+      "copy": "Copy",
+      "copied": "Copied",
+      "toastSuccess": "Link copied to clipboard"
+    },
+    "generate": {
+      "title": "{count, plural, =1 {1 campaign ready} other {# campaigns ready}} for a Partner Link",
+      "body": "You're approved on a campaign that allows online attribution. Generate a tracked link to start earning on it.",
+      "dropdownLabel": "Campaign",
+      "dropdownPlaceholder": "Pick a campaign",
+      "cta": "Generate link",
+      "generating": "Generating…",
+      "successTitle": "Link generated",
+      "successBody": "Your new Partner Link is at the top of the list. Copy it and start sharing — every click is attributed to you.",
+      "errors": {
+        "linkExists": "You already have a link for this campaign.",
+        "disabled": "This campaign no longer accepts Partner Links.",
+        "notApproved": "You need an approved application before you can generate a link.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "empty": {
+      "all": {
+        "title": "No Partner Links yet.",
+        "body": "Browse the marketplace and apply to a campaign that has Partner Links enabled. Once you're approved, generate a link from this page.",
+        "cta": "Browse marketplace"
+      },
+      "active": {
+        "title": "No active links right now.",
+        "body": "Links with at least one click on an active campaign show up here."
+      },
+      "noActivity": {
+        "title": "No quiet links right now.",
+        "body": "Active links that haven't seen a click yet show up here. Share yours on WhatsApp / LinkedIn / email to get the first visit."
+      },
+      "paused": {
+        "title": "No paused links.",
+        "body": "Links on paused, draft, or closed campaigns show up here. Existing clicks and sales remain visible — no new attribution happens."
+      }
+    },
+    "detail": {
+      "openCampaign": "Open campaign",
+      "sections": {
+        "link": "Link",
+        "performance": "Performance",
+        "sales": "Sales",
+        "campaign": "Campaign"
+      },
+      "copy": {
+        "copy": "Copy",
+        "copied": "Copied",
+        "toastSuccess": "Link copied to clipboard"
+      },
+      "link": {
+        "urlLabel": "Tracked URL",
+        "code": "Link code",
+        "created": "Created",
+        "openInNewTab": "Open in new tab"
+      },
+      "performance": {
+        "clicks": "Clicks",
+        "conversions": "Conversions",
+        "rate": "Conv. rate",
+        "commission": "Commission",
+        "trendLabel": "Clicks · last 30 days",
+        "trendAria": "Daily clicks for the last 30 days"
+      },
+      "sales": {
+        "loading": "Loading sales…",
+        "empty": "No attributed sales yet — they'll appear here when a click on this link converts.",
+        "colDate": "Date",
+        "colSale": "Sale",
+        "colCommission": "Commission"
+      },
+      "campaign": {
+        "commissionLabel": "Commission terms",
+        "pctCommission": "{value}% per sale",
+        "flatCommission": "{value} DA per sale",
+        "trackingWindow": "Tracking window",
+        "trackingWindowValue": "{days} days",
+        "campaignStatus": "Campaign status"
+      }
+    }
+  },
+  "Campaigns": {
+    "companyList": {
+      "title": "My campaigns",
+      "description": "Manage your products, partners, and lead flow.",
+      "createCta": "Create campaign",
+      "searchPlaceholder": "Search by product name…",
+      "tabs": {
+        "all": "All",
+        "active": "Active",
+        "paused": "Paused",
+        "draft": "Draft",
+        "closed": "Closed"
+      },
+      "createGate": {
+        "pendingReview": "Your account is pending admin review. You can prepare drafts; publishing unlocks once approved.",
+        "emailUnverified": "Verify your email to publish a new campaign."
+      },
+      "card": {
+        "pctCommission": "{value}% commission",
+        "flatCommission": "{value} commission",
+        "activePartners": "{count, plural, =0 {No partners} =1 {1 partner} other {# partners}}",
+        "leads": "{count, plural, =0 {No leads} =1 {1 lead} other {# leads}}",
+        "conversionRateTooltip": "Conversion rate (converted / total leads)"
+      },
+      "menu": {
+        "trigger": "Campaign actions",
+        "edit": "Edit",
+        "pause": "Pause campaign",
+        "resume": "Resume campaign",
+        "close": "Close campaign",
+        "confirm": {
+          "cancel": "Cancel",
+          "pause": {
+            "title": "Pause {name}?",
+            "body": "Sales partners will see a Paused badge and won't be able to submit new leads. Existing leads in the tracking window stay active.",
+            "confirm": "Pause"
+          },
+          "resume": {
+            "title": "Resume {name}?",
+            "body": "Partners will be able to submit new leads again. Your escrow needs enough balance to reserve incoming leads.",
+            "confirm": "Resume"
+          },
+          "close": {
+            "title": "Close {name}?",
+            "body": "This permanently ends the campaign. Sales partners can no longer submit leads or generate Partner Links. Historical data is preserved. This action can't be undone.",
+            "confirm": "Close campaign"
+          }
+        },
+        "toast": {
+          "pause": {
+            "title": "Campaign paused",
+            "body": "New lead submissions are disabled."
+          },
+          "resume": {
+            "title": "Campaign resumed",
+            "body": "Partners can submit new leads again."
+          },
+          "close": {
+            "title": "Campaign closed",
+            "body": "The campaign is no longer accepting leads or applications."
+          },
+          "error": {
+            "title": "Something went wrong",
+            "body": "We couldn't apply the change. Try again in a moment."
+          }
+        }
+      },
+      "empty": {
+        "firstTitle": "Publish your first campaign.",
+        "firstBody": "List a product with commission terms so sales partners can apply and start sending you leads.",
+        "firstCta": "Create campaign",
+        "filtered": {
+          "all": {
+            "title": "No campaigns match your search.",
+            "body": "Try a different keyword or clear the search to see everything."
+          },
+          "active": {
+            "title": "No active campaigns.",
+            "body": "Active campaigns appear here once you publish or resume one."
+          },
+          "paused": {
+            "title": "No paused campaigns.",
+            "body": "Paused campaigns appear here. Pause an active campaign to temporarily stop new lead submissions."
+          },
+          "draft": {
+            "title": "No drafts.",
+            "body": "Save a campaign without publishing to keep it here for later."
+          },
+          "closed": {
+            "title": "No closed campaigns.",
+            "body": "Closed campaigns appear here. Closing is permanent and preserves historical data."
+          }
+        }
+      }
+    },
+    "companyDetail": {
+      "backToCampaigns": "Back to campaigns",
+      "errorBody": "Couldn't load this campaign. Try refreshing the page.",
+      "hero": {
+        "unknownCompany": "Unknown company",
+        "updatedOn": "Last updated {date}"
+      },
+      "pricing": {
+        "title": "Pricing tiers",
+        "singleTitle": "Pricing",
+        "perSale": "Commission per sale",
+        "standardLabel": "Standard",
+        "untitledTier": "Untitled tier"
+      },
+      "applications": {
+        "title": "Applications",
+        "subtitle": "{count, plural, =0 {No active partners.} =1 {1 active partner.} other {# active partners.}} {pending, plural, =0 {} =1 {1 awaiting review.} other {# awaiting review.}}",
+        "viewAll": "View all",
+        "emptyTitle": "No applications yet.",
+        "emptySubtitle": "When partners apply to sell this campaign, they'll show up here.",
+        "unknownPartner": "Unknown partner",
+        "noPitch": "No pitch provided."
+      },
+      "leads": {
+        "title": "Recent leads",
+        "subtitle": "{count, plural, =0 {No leads yet.} =1 {1 lead total.} other {# leads total.}} {converted, plural, =0 {} =1 {1 converted.} other {# converted.}}",
+        "viewAll": "View all",
+        "emptyTitle": "No leads yet.",
+        "emptySubtitle": "Once partners are approved, the leads they submit appear here in real time.",
+        "unknownPartner": "Unknown partner",
+        "submittedBy": "Submitted by {name}"
+      },
+      "sections": {
+        "about": "About this campaign",
+        "targetAudience": "Who this is for",
+        "requirements": "Sales-partner requirements",
+        "tags": "Product tags",
+        "companySize": "{range} employees"
+      },
+      "rail": {
+        "commissionHeadline": "Commission terms",
+        "pctCommission": "{value}% commission",
+        "flatCommission": "{value} per sale",
+        "kpi": {
+          "partners": "Partners",
+          "leads": "Leads",
+          "conversionRate": "Conv. rate",
+          "revenue": "Revenue"
+        },
+        "actions": {
+          "edit": "Edit campaign",
+          "pause": "Pause campaign",
+          "resume": "Resume campaign",
+          "close": "Close campaign"
+        },
+        "meta": {
+          "trackingWindow": "Tracking window",
+          "trackingWindowValue": "{days} days",
+          "partnerLinks": "Partner Links",
+          "partnerLinksOn": "Enabled"
+        }
+      },
+      "confirm": {
+        "cancel": "Cancel",
+        "errorTitle": "Couldn't update campaign",
+        "errorBody": "Something went wrong. Try again in a moment.",
+        "success": {
+          "pause": "Campaign paused. Partners can still see it but can't submit new leads.",
+          "resume": "Campaign resumed. Partners can submit leads again.",
+          "close": "Campaign closed. Historical data preserved."
+        },
+        "pause": {
+          "title": "Pause this campaign?",
+          "description": "Partners will see a Paused badge on the listing. They can't submit new leads while paused. You can resume any time.",
+          "confirm": "Pause"
+        },
+        "resume": {
+          "title": "Resume this campaign?",
+          "description": "The listing returns to Active. Partners can submit leads as soon as you confirm.",
+          "confirm": "Resume"
+        },
+        "close": {
+          "title": "Close this campaign?",
+          "description": "Closing is permanent. The campaign disappears from the marketplace and partners can't submit new leads. Historical data is preserved.",
+          "confirm": "Close campaign"
+        }
+      },
+      "edit": {
+        "subtitle": "Edit campaign",
+        "save": "Save changes",
+        "cancel": "Cancel",
+        "toastSuccessTitle": "Campaign updated",
+        "toastSuccessBody": "Your changes are live for partners.",
+        "toastErrorTitle": "Couldn't save",
+        "toastErrorBody": "Something went wrong. Try again in a moment.",
+        "nav": {
+          "overview": "Overview",
+          "pricing": "Pricing",
+          "commission": "Commission",
+          "salesKit": "Sales Kit",
+          "partnerLinks": "Partner Links"
+        },
+        "overview": {
+          "productName": "Product name",
+          "description": "Description",
+          "productImage": "Cover image",
+          "productImageHelper": "JPG, PNG, or WEBP. Up to 5 MB. Shown as the listing thumbnail.",
+          "category": "Category",
+          "productTags": "Product tags",
+          "productTagsHelper": "Pick one or more tags so partners can filter to your product.",
+          "targetIndustries": "Target industries",
+          "targetIndustriesHelper": "Industries this product is built for. Helps partners find the right buyers.",
+          "requirements": "Sales-partner requirements",
+          "requirementsHelper": "Optional. Explain experience or context partners need to sell this well."
+        },
+        "pricing": {
+          "helper": "Add one tier for fixed-price products, or several to expose Starter / Pro / Enterprise. The commission is calculated per tier.",
+          "nameLabel": "Tier name",
+          "namePlaceholder": "e.g. Pro",
+          "priceLabel": "Price (DA)",
+          "addTier": "Add another tier",
+          "remove": "Remove tier"
+        },
+        "commission": {
+          "typeLabel": "Commission type",
+          "type": {
+            "percentage": {
+              "label": "Percentage",
+              "helper": "A share of each sale."
+            },
+            "flat": {
+              "label": "Flat amount",
+              "helper": "A fixed amount per sale."
+            }
+          },
+          "valueLabelPct": "Commission percentage",
+          "valueLabelFlat": "Commission amount (DA)",
+          "valueHelperPct": "Whole or decimal value, e.g. 10 for 10%.",
+          "valueHelperFlat": "Whole DA amount, e.g. 5000.",
+          "trackingWindowLabel": "Tracking window",
+          "trackingWindowHelper": "How long an offline lead stays locked to the partner who submitted it.",
+          "trackingDays": "{days} days"
+        },
+        "salesKit": {
+          "intro": "Optional sales-enablement materials your partners use to pitch the product. Skip any slot that doesn't apply.",
+          "optional": "Optional",
+          "slotPitchDeck": "Pitch deck",
+          "slotPitchDeckHelper": "PDF, PPTX, JPG, or PNG. Up to 25 MB.",
+          "slotOnePager": "Product one-pager",
+          "slotOnePagerHelper": "PDF, JPG, or PNG. Up to 25 MB.",
+          "slotPricingSheet": "Pricing sheet",
+          "slotPricingSheetHelper": "PDF, PPTX, or XLSX. Up to 25 MB.",
+          "slotDemoVideo": "Demo video",
+          "slotDemoVideoHelper": "YouTube, Loom, or Vimeo URL.",
+          "videoUrlError": "Use a YouTube, Loom, or Vimeo URL.",
+          "fileHelper": "Drag a file here or click to browse.",
+          "removeFile": "Remove file",
+          "otherTitle": "Other documents",
+          "otherLabelPlaceholder": "Label (e.g. Customer case study — Atlas SARL)",
+          "addOther": "Add another document",
+          "removeOther": "Remove document",
+          "untitled": "Untitled",
+          "preview": "Preview",
+          "download": "Download",
+          "watch": "Watch",
+          "openInNewTab": "Open in new tab",
+          "close": "Close",
+          "unpreviewableTitle": "Preview unavailable",
+          "unpreviewableBody": "This file type can't be previewed inline. Download to open it."
+        },
+        "partnerLinks": {
+          "toggleLabel": "Enable Partner Links",
+          "toggleHelper": "Lets partners share a tracked URL for online sales. SellWell records the click and attributes the sale via your Chargily webhook.",
+          "redirectUrlLabel": "Merchant redirect URL",
+          "redirectUrlHelper": "Where sellwell.dz/r/[code] 302s to. Usually your product or pricing page.",
+          "secretLabel": "Chargily webhook secret",
+          "secretPlaceholder": "whsec_…",
+          "secretHelper": "Copy from your Chargily dashboard. Used to verify incoming webhook signatures.",
+          "snippetsTitle": "Integration snippets",
+          "snippetCapture": "Capture sw_click on landing",
+          "snippetCheckout": "Pass sw_click in checkout metadata",
+          "snippetCopied": "{label} copied to clipboard.",
+          "copy": "Copy",
+          "testLabel": "Test webhook",
+          "testHelper": "Sends a synthetic checkout.paid to your endpoint to confirm the secret works.",
+          "testPassedHelper": "Webhook test passed.",
+          "testPassedLabel": "Tested",
+          "testCta": "Run test",
+          "testSuccessTitle": "Webhook test passed",
+          "testSuccessBody": "Your endpoint accepted the synthetic event.",
+          "testErrorTitle": "Webhook test failed",
+          "testErrorBody": "Double-check the URL and secret, then try again."
+        }
+      },
+      "adminForward": {
+        "title": "This is the company campaign-management view.",
+        "body": "Admins manage campaigns from the admin panel. The admin-facing campaign view ships in Phase 9 (Admin).",
+        "cta": "Open admin panel"
+      }
+    },
+    "wizard": {
+      "optional": "Optional",
+      "title": "Create campaign",
+      "description": "List your product with commission terms so sales partners can apply and start sending you leads.",
+      "steps": {
+        "1": "Product details",
+        "2": "Pricing",
+        "3": "Commission",
+        "4": "Sales Kit",
+        "5": "Review"
+      },
+      "nav": {
+        "back": "Back",
+        "next": "Next",
+        "saveDraft": "Save draft",
+        "publish": "Publish campaign"
+      },
+      "publishGate": {
+        "pendingReview": "Your account is pending admin approval. Save as draft until approved.",
+        "emailUnverified": "Verify your email before publishing.",
+        "webhookRequired": "Test your webhook before publishing with Partner Links enabled."
+      },
+      "toast": {
+        "draftSavedTitle": "Draft saved",
+        "draftSaved": "Your campaign has been saved as a draft.",
+        "saveErrorTitle": "Save failed",
+        "saveError": "Couldn't save the draft. Try again.",
+        "publishedTitle": "Campaign published",
+        "published": "Your campaign is now live on the marketplace.",
+        "publishErrorTitle": "Publish failed",
+        "publishError": "Couldn't publish the campaign. Try again."
+      },
+      "step1": {
+        "sectionProduct": "Product information",
+        "productName": "Product name",
+        "productNamePlaceholder": "e.g. Atlas CRM — Pro",
+        "description": "Description",
+        "descriptionPlaceholder": "Describe your product, what it does, and who it's for…",
+        "productImage": "Cover image",
+        "productImageHelper": "JPG or PNG, max 5 MB. Shown on the marketplace card.",
+        "sectionClassification": "Classification",
+        "category": "Category",
+        "productTags": "Product tags",
+        "productTagsHelper": "Select up to 5 tags that describe your product.",
+        "targetIndustries": "Target industries",
+        "sectionRequirements": "Partner requirements",
+        "requirements": "Requirements",
+        "requirementsPlaceholder": "What experience or profile should applicants have?…"
+      },
+      "step2": {
+        "sectionTiers": "Pricing tiers",
+        "tiersHelper": "Add at least one tier. For a single fixed price, add one tier — the tier name is optional and will display as \"Standard\" if left blank.",
+        "colName": "Tier name",
+        "colPrice": "Price (DZD)",
+        "singleTierNamePlaceholder": "Standard (optional)",
+        "tierNamePlaceholder": "Tier {n} name",
+        "pricePlaceholder": "e.g. 18 000",
+        "addTier": "Add another tier",
+        "removeTier": "Remove tier",
+        "singleTierTip": "Most campaigns have a single fixed price. Add more tiers only if your product genuinely has a Starter / Pro / Enterprise split with different price points.",
+        "fixedPrice": "Fixed price (DZD)",
+        "fixedPriceHelper": "The price a client pays. Partners see this when submitting a lead.",
+        "addTierInfo": "Add a pricing tier if your product has different plans (e.g. Starter, Pro, Enterprise) with distinct prices. Each tier will be selectable by Sales Partners when submitting a lead.",
+        "addTierInfoAriaLabel": "What is a pricing tier?"
+      },
+      "step3": {
+        "sectionCommission": "Commission",
+        "commissionType": "Commission type",
+        "commissionTypePercentage": "Percentage of sale amount",
+        "commissionTypeFlat": "Fixed flat amount",
+        "commissionValuePct": "Commission percentage",
+        "commissionValueFlat": "Commission amount (DZD)",
+        "commissionPctHelper": "e.g. 10 means the partner earns 10% of each closed deal.",
+        "commissionFlatHelper": "Partners earn this fixed amount per confirmed sale, regardless of tier price.",
+        "sectionTracking": "Tracking window",
+        "trackingWindow": "Tracking window",
+        "tracking30": "30 days",
+        "tracking60": "60 days",
+        "tracking90": "90 days",
+        "trackingWindowHelper": "Time during which a registered lead is locked to the Sales Partner. After this window, if no sale is confirmed, the lead may expire.",
+        "sectionPartnerLinks": "Partner Links",
+        "partnerLinksLabel": "Enable Partner Links for this campaign",
+        "partnerLinksHelper": "Sales partners generate a tracked URL (sellwell.dz/r/…) that 302-redirects to your product page. SellWell never holds the payment — your Chargily checkout is the merchant of record.",
+        "merchantRedirectUrl": "Product / pricing page URL",
+        "merchantRedirectHelper": "The page Sales Partners will send traffic to. Your Chargily checkout should be reachable from this page.",
+        "webhookSecret": "Chargily webhook secret",
+        "webhookSecretPlaceholder": "Paste your Chargily webhook signing secret…",
+        "webhookSecretHelper": "From your Chargily dashboard → Webhooks → copy the signing secret for the sellwell.dz/api/webhooks/chargily endpoint.",
+        "snippetsTitle": "Add to your site",
+        "snippetCapture": "1 — Capture sw_click on your landing page",
+        "snippetCheckout": "2 — Pass sw_click through your Chargily checkout",
+        "copy": "Copy",
+        "snippetCopied": "{label} copied to clipboard",
+        "testWebhookLabel": "Test Webhook",
+        "testWebhookHelper": "Fire a synthetic checkout.paid event to verify your webhook secret is correctly configured. Required before you can publish.",
+        "testWebhookCta": "Run test",
+        "testWebhookPassed": "Webhook test passed — your secret is correctly configured.",
+        "testWebhookPassedLabel": "Passed",
+        "testWebhookSuccessTitle": "Webhook verified",
+        "testWebhookSuccess": "Your webhook secret is correct. You can now publish with Partner Links enabled.",
+        "testWebhookErrorTitle": "Webhook test failed",
+        "testWebhookError": "Couldn't verify your webhook. Double-check the secret and try again."
+      },
+      "step4": {
+        "intro": "All slots are optional. Upload materials that help your Sales Partners pitch your product more effectively.",
+        "slotPitchDeck": "Pitch deck",
+        "slotPitchDeckHelper": "Used by partners on first calls. PDF or PPTX.",
+        "slotOnePager": "Product one-pager",
+        "slotOnePagerHelper": "Single page — what / who / why. PDF or image.",
+        "slotPricingSheet": "Pricing sheet",
+        "slotPricingSheetHelper": "Detailed price grid for negotiations. PDF, PPTX or XLSX.",
+        "slotDemoVideo": "Demo video",
+        "slotDemoVideoHelper": "YouTube, Loom or Vimeo link. Shown as a watchable embed.",
+        "videoUrlError": "Please enter a valid YouTube, Loom or Vimeo URL.",
+        "sectionOther": "Other documents",
+        "addOther": "Add document",
+        "otherLabelPlaceholder": "Document title (e.g. Customer case study)",
+        "untitled": "Untitled document",
+        "removeFile": "Remove file",
+        "removeOther": "Remove document",
+        "fileHelper": "PDF, PPTX, JPG, PNG or ZIP — max 25 MB.",
+        "optional": "Optional",
+        "preview": "Preview",
+        "download": "Download",
+        "watch": "Watch",
+        "openInNewTab": "Open",
+        "close": "Close",
+        "unpreviewableTitle": "Preview not available",
+        "unpreviewableBody": "Download the file to view it."
+      },
+      "step5": {
+        "intro": "Review your campaign before publishing. Missing required fields are highlighted below.",
+        "productName": "Product name",
+        "category": "Category",
+        "commission": "Commission",
+        "percentage": "percentage",
+        "flat": "flat",
+        "trackingWindow": "Tracking window",
+        "trackingDays": "{days} days",
+        "pricingTiers": "Pricing tiers",
+        "unnamedTier": "Unnamed tier",
+        "partnerLinks": "Partner Links",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "webhookTest": "Webhook test",
+        "passed": "Passed",
+        "notTested": "Not tested",
+        "webhookTestRequired": "You must pass the webhook test before publishing with Partner Links enabled.",
+        "salesKit": "Sales Kit",
+        "pitchDeck": "Pitch deck",
+        "onePager": "One-pager",
+        "pricingSheet": "Pricing sheet",
+        "demoVideo": "Demo video",
+        "otherDocs": "{count} other {count, plural, =1 {document} other {documents}}",
+        "noDocuments": "None attached"
+      },
+      "validation": {
+        "required": "This field is required.",
+        "imageRequired": "Please upload a cover image.",
+        "tierPriceRequired": "At least one tier must have a price.",
+        "commissionRange": "Percentage must be between 1 and 99."
+      }
+    }
+  },
+  "Settings": {
+    "reviewBanner": {
+      "submitCta": "Submit for re-review",
+      "moreInfo": {
+        "aria":         "Action needed — admin asked for more information",
+        "title":        "Admin asked for more information",
+        "body":         "Update the fields admin called out below, then submit for re-review. No cooldown.",
+        "noteHeading":  "Here's what's needed",
+        "actionHint":   "Make the changes above, then resubmit."
+      },
+      "rejected": {
+        "aria":               "Application rejected",
+        "title":              "Your application was rejected",
+        "body":               "After the cooldown elapses you can edit your profile and submit for re-review.",
+        "noteHeading":        "Reason for rejection",
+        "actionHint":         "Update the fields above, then resubmit.",
+        "cooldownCountdown":  "You can resubmit in {days, plural, =1 {1 day} other {# days}}."
+      },
+      "toast": {
+        "successTitle": "Submitted for re-review",
+        "successBody":  "Your profile is back in the queue. Admin will get to it within 2–5 business days.",
+        "errorTitle":   "Couldn't submit",
+        "errorBody":    "Something went wrong. Try again in a moment."
+      }
+    },
+    "profile": {
+      "partner": {
+        "heading":    "Your profile",
+        "subheading": "Sales Partners use this to apply to campaigns. Keep it accurate.",
+        "firstNameLabel":     "First name",
+        "lastNameLabel":      "Last name",
+        "phoneLabel":         "Phone number",
+        "phoneHelper":        "Optional — used for OTP verification only.",
+        "bioLabel":           "Bio",
+        "bioHelper":          "Describe what you sell and how you sell it. 40+ characters.",
+        "linkedinLabel":      "LinkedIn URL",
+        "categoriesLabel":    "Preferred categories",
+        "categoriesPlaceholder": "Pick one or more…",
+        "skillsLabel":        "Skill tags",
+        "skillsPlaceholder":  "Pick one or more…",
+        "photoLabel":         "Profile photo",
+        "photoCurrent":       "Current photo",
+        "photoHelper":        "PNG or JPG, max 5MB. Optional — leave blank to keep current.",
+        "cvLabel":            "CV / Resume",
+        "cvCurrentTitle":     "{name} — CV",
+        "cvPreview":          "Preview",
+        "cvDownload":         "Download",
+        "cvOpenInNewTab":     "Open in new tab",
+        "cvHelper":           "PDF or DOCX, max 10MB. Optional — leave blank to keep current.",
+        "saveCta":            "Save profile",
+        "previewModal": {
+          "label":                "Document preview",
+          "unpreviewableTitle":   "Preview not available",
+          "unpreviewableBody":    "This file type can't be previewed in the browser. Open it in a new tab or download to view."
+        },
+        "errors": {
+          "firstName":  "First name must be at least 2 characters.",
+          "lastName":   "Last name must be at least 2 characters.",
+          "bio":        "Bio must be at least 40 characters.",
+          "linkedin":   "Must be a linkedin.com URL.",
+          "categories": "Pick at least one category.",
+          "skills":     "Pick at least one skill tag."
+        },
+        "toast": {
+          "successTitle": "Profile saved",
+          "successBody":  "Your changes are live.",
+          "errorTitle":   "Couldn't save",
+          "errorBody":    "Something went wrong. Try again."
+        }
+      },
+      "company": {
+        "heading":    "Your company profile",
+        "subheading": "Sales Partners see this when they browse the marketplace. Keep it sharp.",
+        "companyNameLabel":     "Company name",
+        "industryLabel":        "Industry",
+        "industryPlaceholder":  "Pick your industry…",
+        "websiteLabel":         "Website",
+        "websiteHelper":        "Optional — full URL (https://…).",
+        "descriptionLabel":     "Business description",
+        "descriptionHelper":    "Describe what your product actually does. 40+ characters.",
+        "logoLabel":            "Company logo",
+        "logoCurrent":          "Current logo",
+        "logoHelper":           "PNG, JPG, or SVG, max 5MB. Optional — leave blank to keep current.",
+        "saveCta":              "Save profile",
+        "errors": {
+          "companyName": "Company name must be at least 2 characters.",
+          "industry":    "Industry is required.",
+          "description": "Description must be at least 40 characters.",
+          "website":     "Must be a full URL (https://…)."
+        },
+        "toast": {
+          "successTitle": "Profile saved",
+          "successBody":  "Your changes are live.",
+          "errorTitle":   "Couldn't save",
+          "errorBody":    "Something went wrong. Try again."
+        }
+      }
+    }
+  }
+}

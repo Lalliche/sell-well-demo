@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ──────────────────────────────────────────────────────────── */
+@theme inline {
+  /* Breakpoints */
+  --breakpoint-xs:   500px;
+  --breakpoint-sm:   640px;
+  --breakpoint-md:   850px;
+  --breakpoint-lg:   1150px;
+  --breakpoint-xl:   1350px;
+  --breakpoint-xxl:  1800px;
+  --breakpoint-xxxl: 2200px;
+
+  /* Backgrounds & Surfaces */
+  --color-bg:             #FAF9F6;
+  --color-bg-alt:         #F2F1ED;
+  --color-surface:        #FFFFFF;
+  --color-surface-hover:  #F7F6F3;
+
+  /* Borders */
+  --color-border:         #E5E3DF;
+  --color-border-light:   #EEEDEA;
+
+  /* Text */
+  --color-text:           #1A1A1A;
+  --color-text-secondary: #6B6B6B;
+  --color-text-muted:     #9E9E9E;
+
+  /* Accent — Steel Blue (the only chromatic color) */
+  --color-accent:         #3B6ECC;
+  --color-accent-text:    #2B5AA8;
+  --color-accent-hover:   #2F5AB0;
+
+  /* CTA — near-black buttons */
+  --color-cta:            #1A1A1A;
+  --color-cta-hover:      #2A2A2A;
+  --color-cta-text:       #FFFFFF;
+
+  /* Status — subtle palette */
+  --color-status-approved-bg:   #EDF5F0;
+  --color-status-approved-text: #2D6A4F;
+  --color-status-pending-bg:    #FDF6E3;
+  --color-status-pending-text:  #8B6914;
+  --color-status-rejected-bg:   #FBECEC;
+  --color-status-rejected-text: #B13B3B;
+  --color-status-active-bg:     #ECF0F8;
+  --color-status-active-text:   #3B6ECC;
+
+  /* Trends */
+  --color-trend-positive: #2D6A4F;
+  --color-trend-negative: #B13B3B;
+
+  /* Fonts */
+  --font-heading: var(--font-sora),        system-ui, sans-serif;
+  --font-body:    var(--font-dm-sans),     system-ui, sans-serif;
+  --font-mono:    var(--font-ibm-plex-mono), ui-monospace, monospace;
+}
+
+/* ─── Non-Tailwind CSS Variables ─────────────────────────────────────────────── */
+:root {
+  /* Accent alpha variants */
+  --accent-light:  rgba(59, 110, 204, 0.08);
+  --accent-border: rgba(59, 110, 204, 0.15);
+
+  /* Hero gradient */
+  --bg-gradient: linear-gradient(180deg, #EDF2FA 0%, #FAF9F6 40%);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ─── Base Styles ────────────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  background: #FAF9F6;
+  color: #6B6B6B;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+/* ─── Number input — remove native browser spinners globally ────────────────── */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F2F1ED; }
+::-webkit-scrollbar-thumb { background: #E5E3DF; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9E9E9E; }
+
+/* ─── Keyframes ──────────────────────────────────────────────────────────────── */
+@keyframes skeleton-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(0.5em); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-0.375em); }
+}
+
+@keyframes flow-line {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(300%); }
+}
+
+@keyframes hero-pill-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(59,110,204,0.4); }
+  50%       { box-shadow: 0 0 0 0.25em rgba(59,110,204,0); }
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(45,106,79,0.5); }
+  50%       { box-shadow: 0 0 0 6px rgba(45,106,79,0); }
+}
+
+/* ─── prefers-reduced-motion ─────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:        0.01ms !important;
+    animation-iteration-count: 1      !important;
+    transition-duration:       0.01ms !important;
+    scroll-behavior:           auto   !important;
+  }
+}
+
+/* ─── Scroll-triggered section entrance ─────────────────────────────────────── */
+.section-hidden  { opacity: 0; transform: translateY(2em); }
+.section-visible { opacity: 1; transform: translateY(0); animation: fade-up 0.8s cubic-bezier(0.4,0,0.2,1) both; }
+
+/* ─── Hero Section ───────────────────────────────────────────────────────────── */
+.hero-section { background: var(--bg-gradient); }
+
+.hero-bg-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(to right,  rgba(59,110,204,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59,110,204,0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 30%, transparent 75%);
+}
+
+.hero-bg-spotlight {
+  position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply;
+  background: radial-gradient(circle 320px at var(--mx, 50%) var(--my, 30%), rgba(59,110,204,0.18) 0%, rgba(59,110,204,0.06) 30%, transparent 60%);
+  transition: opacity 0.3s;
+}
+
+/* Staggered entrance animations */
+.hero-entrance-0 { opacity: 0; transform: translateY(20px); animation: fade-up 0.6s cubic-bezier(0.4,0,0.2,1) 0.00s forwards; }
+.hero-entrance-1 { opacity: 0; transform: translateY(28px); animation: fade-up 0.8s cubic-bezier(0.4,0,0.2,1) 0.20s forwards; }
+.hero-entrance-2 { opacity: 0; transform: translateY(20px); animation: fade-up 0.7s cubic-bezier(0.4,0,0.2,1) 0.35s forwards; }
+.hero-entrance-3 { opacity: 0; transform: translateY(20px); animation: fade-up 0.7s cubic-bezier(0.4,0,0.2,1) 0.45s forwards; }
+.hero-entrance-4 { opacity: 0;                              animation: fade-up 0.7s cubic-bezier(0.4,0,0.2,1) 0.55s forwards; }
+.hero-entrance-5 { opacity: 0; transform: translateY(60px); animation: fade-up 1.0s cubic-bezier(0.4,0,0.2,1) 0.60s forwards; }
+
+/* Mockup glow */
+.hero-mockup-glow {
+  position: absolute; bottom: -40px; left: 10%; right: 10%;
+  height: 80px; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse, rgba(59,110,204,0.4) 0%, transparent 70%);
+  filter: blur(40px);
+}
+
+/* Tilt wrapper — transform applied via JS scroll handler */
+.hero-mockup-tilt { transform-origin: 50% 0%; will-change: transform; position: relative; z-index: 1; }
+
+/* ─── Solution diagram — animated connector line ────────────────────────────── */
+.sol-line-anim {
+  width: 2px; height: 20px;
+  background: var(--color-border);
+  position: relative; overflow: hidden;
+}
+.sol-line-anim::after {
+  content: ''; position: absolute;
+  top: -100%; left: 0; width: 100%; height: 100%;
+  background: var(--color-accent);
+  animation: sol-flow 2s linear infinite;
+}
+@keyframes sol-flow {
+  0%   { top: -100%; }
+  100% { top: 200%;  }
+}
+
+/* ─── Shadow Utility Mappings ────────────────────────────────────────────────── */
+.shadow-xs { box-shadow: var(--shadow-xs); }
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
