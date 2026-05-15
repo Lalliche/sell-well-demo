@@ -106,7 +106,7 @@ export default function Hero() {
       <div
         ref={mockupWrapRef}
         className={cn(
-          "relative z-2 max-w-[80em] mx-auto px-[2em] mt-[5em]",
+          "hidden md:block relative z-2 max-w-[80em] mx-auto px-[2em] mt-[5em]",
           "transition-[opacity,transform] duration-1000 ease-in-out",
           mockupInView
             ? "opacity-100 translate-y-0"

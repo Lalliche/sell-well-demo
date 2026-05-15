@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# shared specs (local copy, not tracked in this repo)
+/shared-specs

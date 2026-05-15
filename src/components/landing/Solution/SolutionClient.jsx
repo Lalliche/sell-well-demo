@@ -126,7 +126,7 @@ export default function SolutionClient({
         </div>
 
         {/* Two columns + center rail with clock pill */}
-        <div className="relative grid grid-cols-2 gap-[2em] sm:gap-[3em] min-h-[20em]">
+        <div className="relative grid grid-cols-2 gap-[2em] sm:gap-[3em] min-h-[36em] sm:min-h-[20em]">
           <motion.div
             className="absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-0.5 bg-border-light"
             aria-hidden="true"
@@ -146,7 +146,7 @@ export default function SolutionClient({
           </motion.div>
 
           <div className="relative pr-[0.5em] sm:pr-[1em]">
-            <div className="relative h-full min-h-[20em]">
+            <div className="relative h-full min-h-[36em] sm:min-h-[20em]">
               {LEFT_EVENTS.map((event) => (
                 <EventRow key={event.id} event={event} progress={smoothProgress} side="left" />
               ))}
@@ -154,7 +154,7 @@ export default function SolutionClient({
           </div>
 
           <div className="relative pl-[0.5em] sm:pl-[1em]">
-            <div className="relative h-full min-h-[20em]">
+            <div className="relative h-full min-h-[36em] sm:min-h-[20em]">
               {RIGHT_EVENTS.map((event) => (
                 <EventRow key={event.id} event={event} progress={smoothProgress} side="right" />
               ))}

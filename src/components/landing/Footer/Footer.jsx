@@ -68,14 +68,14 @@ export default function Footer() {
     <footer className="bg-bg border-t border-border-light">
       <div className="max-w-[78em] mx-auto px-[2em] py-[5em] sm:py-[6em]">
         {/* Top row: brand + 3 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-[2.5em]">
-          <div className="flex flex-col gap-[0.875em]">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-[2em] lg:gap-[2.5em]">
+          <div className="col-span-2 lg:col-span-1 flex flex-col gap-[0.875em]">
             <Link href="/" className="inline-flex items-center self-start" aria-label="SellWell">
               <Image
                 src={Typemark}
                 alt="SellWell"
                 height={128}
-                className=" w-auto"
+                className="w-auto"
               />
             </Link>
             <p className="font-body text-[0.8125em] leading-[1.55] text-text-muted max-w-[22em]">
